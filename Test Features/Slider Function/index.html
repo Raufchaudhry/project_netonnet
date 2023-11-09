@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="Slider/Slider.css">
+</head>
+<body>
+    <!--Slider function begins here-->
+    <div class="mySliderContainer">
+        <!--mySlider class for each slider-->
+        <div class="mySlider fade">
+            <img src="TestPictures/pexels-ag-z-3459921.jpg" style="width: 100%;">
+        </div>
+
+        <div class="mySlider fade">
+            <img src="TestPictures/pexels-gonzalo-mendiola-17649453.jpg" style="width: 100%;">
+        </div>
+
+        <div class="mySlider fade">
+            <img src="TestPictures/pexels-lisa-fotios-18299767.jpg" style="width: 100%;">
+        </div>
+
+        <!--Prev/Next slider function here, will automatically be placed depending on size-->
+        <div class="prev" onclick="nextSlide(-1)">Back</div>
+        <div class="next" onclick="nextSlide(1)">Forward</div>
+
+        <!--Dots layout, needs a new class if we want to move it inside the slider section-->
+        <div style="text-align: center;">
+            <!--Each Dot clickable to get to the picture-->
+            <div class="Slider_Dots" onclick="currentSlide(1)"></div>
+            <div class="Slider_Dots" onclick="currentSlide(2)"></div>
+            <div class="Slider_Dots" onclick="currentSlide(3)"></div>
+        </div>
+    </div>
+    <!--Script link-->
+    <script src="Slider/Slider.js"></script>
+</body>
+</html>
