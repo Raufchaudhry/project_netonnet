@@ -201,10 +201,10 @@ body {
 .header-bottom_navigation {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "nav1 nav1 nav1 none nav2"
+    "nav1 nav1 nav1 nav1 none nav2"
     ;
 
 }
@@ -229,3 +229,33 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1199px) {
+    .header-top, .header-bottom_content {
+        display: none;
+    }
+
+    .header-middle {
+        height: 145px;
+    }
+
+    .header-middle_content {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .header-middle_logo {
+        order: 1;
+    }
+
+    .header-middle_btns {
+        order: 2;
+    }
+
+    .header-middle_search {
+        width: 100%;
+        order: 3;
+        margin: 10px 0;
+    }
+
+  }
