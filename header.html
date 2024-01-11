@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="assets/style/header.css">
     <title>Header part</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e5469a7770.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,28 +25,36 @@
             </div>
             <div class="header-middle">
                 <div class="header-middle_content">
+                    <button class="header-middle_mobile-navigation">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </button>
                     <div class="header-middle_logo">
-                        <a href="header.html"></a>
+                        <a href="header.html"></a> <!--Lägg till länken/html-filen för början av hemsida här-->
                         <img src="assets/img/NetOnNet-logo2.png" alt="NetOnNet_Logo">
                     </div>
                     <div class="header-middle_search">
-                        <div class="searchbar">
-        
+                        <input type="text" placeholder="Search...">
+                        <div class="search_submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                     <div class="header-middle_btns">
                         <button class="middle-btns_general">
-                            
+                            <i class="fa-regular fa-user"></i>
+                            <p>Logga In</p>
                         </button>
                         <button class="middle-btns_general">
-        
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Shoppa</p>
                         </button>
                     </div>
                 </div>
-                
+
             </div>
     
-            <div class="header-bottom">
+            <div class="header-bottom"> <!--Mobile Navigation flyttas upp till header-middle-->
                 <div class="header-bottom_content">
                     <div class="header-bottom_navigation">
                         <ul class="nav1">
@@ -69,5 +78,7 @@
             </div>
         </div>
     </header>
+
+
 </body>
 </html>
