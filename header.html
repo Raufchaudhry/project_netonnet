@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/mobileNavigation.css">
     <title>Header part</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e5469a7770.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <div class="mobile-navigation" id="fullNavigation">
+        <div class="mobile-navigation__inner">
+            <div class="navigation-menu">
+                <div class="navigation-menu__inner">
+                    <div class="mobile-menu__help">
+                        <div class="mobile-menu__Hittalager"><i class="fa-solid fa-location-dot"></i>Hitta Lagershop</div>
+                        <div class="mobile-menu__Kundservice"><i class="fa-solid fa-phone"></i>Kundservice</div>
+                    </div>
+
+                </div>
+                <button class="navigation-close">X</button>
+            </div>
+        </div>
+    </div>
+
+    
     <header>
         <div class="header-container">
             <div class="header-top">
@@ -34,12 +52,12 @@
                         <a href="header.html"></a> <!--Lägg till länken/html-filen för början av hemsida här-->
                         <img src="assets/img/NetOnNet-logo2.png" alt="NetOnNet_Logo">
                     </div>
-                    <div class="header-middle_search">
-                        <input type="text" placeholder="Search...">
+                    <form class="header-middle_search">
+                        <input type="text" placeholder="Sök produkter, guider och mer...">
                         <div class="search_submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                    </div>
+                    </form>
                     <div class="header-middle_btns">
                         <button class="middle-btns_general">
                             <i class="fa-regular fa-user"></i>
@@ -54,10 +72,10 @@
 
             </div>
     
-            <div class="header-bottom"> <!--Mobile Navigation flyttas upp till header-middle-->
+            <div class="header-bottom"> <!--Mobile Navigation flyttas upp till början av html filen så vi kan göra svart overlay över hela skärmen-->
                 <div class="header-bottom_content">
                     <div class="header-bottom_navigation">
-                        <ul class="nav1">
+                        <ul class="nav1"> <!--Kommer att modifieras när navigation filen kommer-->
                             <li class="navigation_option">Dator & Surfplatta</li>
                             <li class="navigation_option">Datorkomponent</li>
                             <li class="navigation_option">Gaming</li>
@@ -80,5 +98,7 @@
     </header>
 
 
+
+    
 </body>
 </html>
