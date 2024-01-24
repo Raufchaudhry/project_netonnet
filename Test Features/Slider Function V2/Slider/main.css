@@ -17,6 +17,7 @@ body {
     grid-template-columns: repeat(4, 100%);
     overflow: hidden;
     white-space: nowrap;
+
 }
 
 .mySlider {
@@ -35,6 +36,7 @@ body {
 .mySlides {
     display: flex;
     transition: transform 0.3s ease;
+    touch-action: pan-y;
 }
 
 .prev, .next {
@@ -76,3 +78,4 @@ body {
 .placeholder_Dots .Slider_Dots.active {
     background-color: #333;
   }
+

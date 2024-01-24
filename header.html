@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <div class="mobile-navigation__darkoverlay" id="mobile-navigationOverlay"></div>
     <div class="mobile-navigation" id="fullNavigation">
         <div class="mobile-navigation__inner">
             <div class="navigation-menu">
@@ -17,12 +18,78 @@
                         <div class="mobile-menu__Hittalager"><i class="fa-solid fa-location-dot"></i>Hitta Lagershop</div>
                         <div class="mobile-menu__Kundservice"><i class="fa-solid fa-phone"></i>Kundservice</div>
                     </div>
+                    <div class="mobile-navigation__functionality" id="mobile_navigationFunction">
+                        <ul class="mobile-navigation__options">
+                            <li>
+                                <i class="fa-solid fa-laptop"></i>
+                                <span>Dator & Surfplatta</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span>Datorkomponent</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Gaming</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-house"></i>
+                                <span>Hem & Fritid</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-tv"></i>
+                                <span>TV</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-headset"></i>
+                                <span>Ljud</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span>Mobil & Surfplatta</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-toilet"></i>
+                                <span>Vitvaror</span>
+                                <div class="mobile-navigation__arrow"></div>
+                            </li>
+                        </ul>
+                        <ul class="mobile-navigation__links">
+                            <li>
+                                <a href="#">Outlet</a>
+                            </li>
+                            <li>
+                                <a href="#">Tjänster</a>
+                            </li>
+                            <li>
+                                <a href="#">Varumärken</a>
+                            </li>
+                        </ul>
+                        <div class="mobile-navigation__reklam">
 
+                        </div>
+                    </div>
+                    <div class="mobile-navigation__sitetype">
+                        <ul>
+                            <li><a href="#">Till Privatkund</a></li>
+                            <hr>
+                            <li><a href="#">Till Företag</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="navigation-close">X</button>
+                <button class="navigation-close" id="mobile-navigationClose">✖︎</button>
             </div>
         </div>
     </div>
+    
+
 
     
     <header>
@@ -43,7 +110,7 @@
             </div>
             <div class="header-middle">
                 <div class="header-middle_content">
-                    <button class="header-middle_mobile-navigation">
+                    <button class="header-middle_mobile-navigation" id="mobile-navigationOpen">
                         <hr>
                         <hr>
                         <hr>
@@ -54,9 +121,9 @@
                     </div>
                     <form class="header-middle_search">
                         <input type="text" placeholder="Sök produkter, guider och mer...">
-                        <div class="search_submit">
+                        <button class="search_submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
+                        </button>
                     </form>
                     <div class="header-middle_btns">
                         <button class="middle-btns_general">
@@ -86,19 +153,18 @@
                             <li class="navigation_option">Vitvaror</li>
                         </ul>
                         <ul class="nav2">
-                            <li>Outlet</li>
-                            <li>Tjänster</li>
-                            <li>Varumärken</li>
+                            <li class="navigation_option">Outlet</li>
+                            <li class="navigation_option">Tjänster</li>
+                            <li class="navigation_option">Varumärken</li>
                         </ul>
                     </div>
                 </div>
-                   
             </div>
         </div>
     </header>
 
 
 
-    
+    <script src="assets/script/header/header-mobile_nav.js"></script>  
 </body>
 </html>
