@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav1">
+                <ul  class="list1">
+                    <li id="dator" class="nav-item">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Dator & Surfplatta</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Datorkomponenter</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    </li>
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Gaming</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Hem & Fritid</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">TV</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Ljud</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Mobil & smartwatch</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                    <li class="nav-item" id="dator">
+                        <a onclick="showContainer()" href="#" class="nav-item__links">Vitvaror</a>
+                        <div class="main-container not-showing" id="maincontainer">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Dator & Surfplatta</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer()" id="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="pic_1">
+                                        <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                </ul>
+
+            </div>
+            <div class="nav2">
+                <ul class="list2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-item__links">Outlet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item__links">Tjänster</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item__links">Varumärken</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let clicked = false
+        function showContainer(){
+
+            if (clicked==false) {document.getElementById('maincontainer').classList.remove('not-showing')
+        
+                  clicked=true}
+            
+            else {document.getElementById('maincontainer').classList.add('not-showing')
+            clicked = false}
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main--nav">
+            <ul class="main--nav__inner">
+                <li class="nav--item">
+                    <span class="nav--item__icon"><i class="fa-solid fa-house"></i></span>
+                    <a href="#" class="nav--item__links" id="home">Home</a>
+                </li>
+                <li id="history" class="nav--item">
+                    <a onclick="showSubMenu()" href="#" class="nav--item__links">History</a>
+                    <ul id="submenu" class="not-showing">
+                        <li>PY</li>
+                        <li>JS</li>
+                        <li>HTML</li>
+                    </ul>
+                </li>
+                <li class="nav--item">
+                    <a href="#" class="nav--item__links">User</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#" class="nav--item__links">Folder</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#" class="nav--item__links">Bookmark</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        let webSite= "Empity"
+        document.getElementById("home").addEventListener('click',function(e){
+         document.getElementById("home").innerHTML=webSite;
+        })
+
+        let clicked = false
+        function showSubMenu(){
+
+            if (clicked==false) {document.getElementById('submenu').classList.remove('not-showing')
+        
+                  clicked=true}
+            
+            else {document.getElementById('submenu').classList.add('not-showing')
+            clicked = false}
+        }
+    </script>
+</body>
+</html>-->
