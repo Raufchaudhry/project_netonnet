@@ -77,8 +77,8 @@
                     </li>
                 
                     <li class="nav-item" id="dator">
-                        <a onclick="showContainer()" href="#" class="nav-item__links">Datorkomponenter</a>
-                        <div class="main-container not-showing" id="maincontainer">
+                        <a onclick="showContainer1()" href="#" class="nav-item__links">Datorkomponenter</a>
+                        <div class="main-container not-showing" id="maincontainerr">
                             <div class="heading">
                                 <div class="pic-heading">
                                     <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
@@ -86,7 +86,7 @@
                                             <h2 id="heading1">Datorkomponenter</h2>
                                         </div>
                                     </div>
-                                <div onclick="showContainer()" id="x">x</div>
+                                <div onclick="showContainer1()" id="x">x</div>
                             </div>
                             
                             <div class="main-container-inner">
@@ -571,6 +571,25 @@
             else {document.getElementById('maincontainer').classList.add('not-showing')
             clicked = false}
         }
+
+        let clickedd = false
+        function showContainer1(){
+
+            if (clickedd==false) {document.getElementById('maincontainerr').classList.remove('not-showing')
+        
+                  clickedd=true}
+            
+            else {document.getElementById('maincontainerr').classList.add('not-showing')
+            clickedd = false}
+        }
+
+         
+
+
+
+
+
+
     </script>
     
 </body>
