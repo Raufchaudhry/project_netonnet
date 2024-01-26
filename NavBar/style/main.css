@@ -19,22 +19,28 @@ body {
 
 .nav {
     display: flex;
+    width: 1252px;
+    height: 39px;
     justify-content: space-between;
     height: 40px;
     background: #fff;
-    padding-right: 200px;
-    padding-left: 200px;
+    
+
     margin-top: 50px;
     font-size: 13px;
     flex-wrap: wrap;
     position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    
     
     
     
 }
 .main-container {
     position: absolute;
-    left: 200px;
+    left: 0;
 }
 
 a.nav-item__links:link  {
