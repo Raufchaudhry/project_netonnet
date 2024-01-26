@@ -22,13 +22,19 @@ body {
     justify-content: space-between;
     height: 40px;
     background: #fff;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
     margin-top: 50px;
     font-size: 13px;
     flex-wrap: wrap;
+    position: relative;
     
     
+    
+}
+.main-container {
+    position: absolute;
+    left: 200px;
 }
 
 a.nav-item__links:link  {
@@ -39,8 +45,8 @@ a.nav-item__links:hover {
 }
 
 
-/*.not-showing{
-    display:none;
+.not-showing{
+    display:none !important;
 }
 
 #submenu{
@@ -51,7 +57,7 @@ a.nav-item__links:hover {
     background-color: #fff;
     padding-left:10px ;
     
-}*/
+}
 .main-container {
     width: 1100px;
     height: 70vh;
@@ -198,6 +204,15 @@ a.nav-item__links:hover {
 
         display: flex;
     }
+    #gaming-pic {
+        width: 300px;
+        height: 350px;
+        padding-top: 60px;
+        
+    }
+    
+    
+    
         
 
     
