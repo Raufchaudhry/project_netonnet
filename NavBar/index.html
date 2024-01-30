@@ -565,7 +565,10 @@
             </div>
         </div>
     </div>
+    <main id="main">
 
+
+    </main>
     <script>
 
          let clicked = false
@@ -577,18 +580,28 @@
                 for (i=0;i<allContainers.length;i++){
                         allContainers[i].classList.add('not-showing')
                     }
+            clicked=false
          }
         function showContainer(option){
             let container = document.getElementById(option);
 
-    if (container.classList.contains('not-showing')) {
-        cleanContainers();
-        container.classList.remove('not-showing');
-    } else {
-        container.classList.add('not-showing');
-    }
-}
+            if (container.classList.contains('not-showing')) {
+                cleanContainers();
+                container.classList.remove('not-showing');
+                clicked=true
+            } else {
+                cleanContainers();
+            }
+        }
 
+
+        document.getElementById('main').addEventListener('click',()=>{
+
+            if (clicked===true){
+                 cleanContainers()
+            }
+           
+        })
         
           
             /*if (clicked==false) {

@@ -9,6 +9,10 @@ body {
     font-family: "Open Sans",sans-serif;
     background-color: rgb(240, 233, 233);
 }
+
+main {height: 70vh;
+    width:100%;}
+
 .nav-item {
     display: inline-block;
     padding: 10px;
