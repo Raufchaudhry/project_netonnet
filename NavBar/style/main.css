@@ -8,6 +8,7 @@ body {
     
     font-family: "Open Sans",sans-serif;
     background-color: rgb(240, 233, 233);
+    
 }
 
 main {height: 70vh;
@@ -100,6 +101,10 @@ a.nav-item__links:hover {
     padding-bottom: 15px;
     font-size: 15px;
 }
+.catagories {
+    
+    
+}
 #just {
     padding-top: 20px;
     font-size: 15px;
@@ -137,7 +142,9 @@ a.nav-item__links:hover {
     
     
     
+    
 }
+
 .list-inside li a {
     display: flex;
     color: #0096db;
@@ -151,6 +158,9 @@ a.nav-item__links:hover {
 }
 .main-container-inner {
     display: flex;
+
+    height: auto;
+    
     
 }
 /*.catagories-side-1{
@@ -220,8 +230,14 @@ a.nav-item__links:hover {
         padding-top: 60px;
         
     }
-    
-    
+    #pic11 {
+        width: 300px;
+        height: 300px;
+        padding-top: 10px;
+    }
+    .pic_1_inner {
+        padding-top: 20px;
+    }
     
         
 
