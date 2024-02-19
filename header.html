@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/mobileNavigation.css">
+    <link rel="stylesheet" href="assets/style/cartPopup.css">
     <title>Header part</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e5469a7770.js" crossorigin="anonymous"></script>
@@ -89,7 +90,18 @@
         </div>
     </div>
     
+    <div class="cart-overlay" id="cartMenu">
+        <div class="cart-menu">
+            <div class="cart-head"><i class="fa-solid fa-cart-shopping"></i>  Kundvagn</div>
+            <div class="cart-products">
+                <h2 id="empty">Kundvagnen är tom</h2>
+            </div>
 
+            <div class="cart-recommendations">
+
+            </div>
+        </div>
+    </div>
 
     
     <header>
@@ -130,7 +142,7 @@
                             <i class="fa-regular fa-user"></i>
                             <p>Logga In</p>
                         </button>
-                        <button class="middle-btns_general">
+                        <button class="middle-btns_general" id="cartBtn">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <p>Shoppa</p>
                         </button>
@@ -165,6 +177,7 @@
 
 
 
-    <script src="assets/script/header/header-mobile_nav.js"></script>  
+    <script src="assets/script/header/header-mobile_nav.js"></script> 
+    <script src="assets/script/header/header-CartPopup.js"></script> 
 </body>
 </html>

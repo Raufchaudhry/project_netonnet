@@ -2,7 +2,7 @@ const slider = document.querySelector(".mySlides");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const dots = document.querySelectorAll(".Slider_Dots");
-const slideWidth = document.querySelector(".mySlider").offsetWidth;
+const slideWidth = document.querySelector(".mySlider").scrollWidth;
 let SlideIndex = 0
 
 function prevSlide() {
@@ -29,6 +29,7 @@ function nextSlide() {
 
 function showSlide() {
     const translateX = -SlideIndex * slideWidth;
+    console.log(translateX)
     slider.style.transform = `translateX(${translateX}px)`;
 }
 
