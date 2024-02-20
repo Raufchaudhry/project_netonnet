@@ -15,9 +15,9 @@ cartMenu.addEventListener("click", function(event) {
         closeCartMenu()
     } 
 });
-window.addEventListener("resize", function() {
-    if (window.innerWidth < 1200) {
-        closeCartMenu()
-    }
-})
+// window.addEventListener("resize", function() {
+//     if (window.innerWidth < 1200) {
+//         closeCartMenu()
+//     }
+// })
 
