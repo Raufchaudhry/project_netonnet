@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/mobileNavigation.css">
     <link rel="stylesheet" href="assets/style/cartPopup.css">
+    <link rel="stylesheet" href="assets/style/desktopNavigation.css">
     <title>Header part</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e5469a7770.js" crossorigin="anonymous"></script>
@@ -154,15 +155,532 @@
             <div class="header-bottom"> <!--Mobile Navigation flyttas upp till början av html filen så vi kan göra svart overlay över hela skärmen-->
                 <div class="header-bottom_content">
                     <div class="header-bottom_navigation">
-                        <ul class="nav1"> <!--Kommer att modifieras när navigation filen kommer-->
-                            <li class="navigation_option">Dator & Surfplatta</li>
-                            <li class="navigation_option">Datorkomponent</li>
-                            <li class="navigation_option">Gaming</li>
-                            <li class="navigation_option">Hem & Fritid</li>
-                            <li class="navigation_option">TV</li>
-                            <li class="navigation_option">Ljud</li>
-                            <li class="navigation_option">Mobil & Smartwatch</li>
-                            <li class="navigation_option">Vitvaror</li>
+                        <ul class="nav1"> <!--Rauf's navigation ligger emellan varje option i nav1-->
+                            <li class="navigation_option" onclick="showContainer('maincontainer')">Dator & Surfplatta</li>
+                            
+                            <div class="main-container not-showing" id="maincontainer" >
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">Dator & Surfplatta</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('maincontainer')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu Dator & Surfplatta</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                        </div>
+                                        <div class="heading-under">
+                                        <h4 id="heading-under1">Inspiration & Guider</h4>
+                                        <ul class="heading-under2">
+                                            <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                        </ul>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="data:image/webp;base64,UklGRhwEAABXRUJQVlA4WAoAAAAQAAAAswAAswAAQUxQSCoDAAANkEDbliE79RHbtm3bHjO2bdu2bdu2bdvGt3ErqOp6cRIRDiRJapvm5Gw4Jbg3sH9xtf/+q2XJk0olnud3LnggnX6qamcmWu6K9dZ1kKxbESWvqPa1K7yTqWFGRW+DfAOrSRS3v7L3bpFc0+Vpo/CE03OoPDqFpYh+TZq8aOKw5xJIPD3z4uIun5UlDvbk0Uupfje+aQCSP5YlIkexfj7EAlG9fnmVaMUqaN/78dpTtIIC/Yf6Ld1c0NFdWhSrvWYFYxzerUkdfsdNfYl7pl47n1pxdzBm8m1OrE7hv2tWsBGt0sD/GpauS55CXeOunsI5mxd6qlOpNnFyTGLM4tIKja6UAwaopbPTZlj471rmaoZZlJqaDQawOUykSQX/a1qwMXinm5gHEjDWNlNmVwXoqVHRRhimMfgHU5IphOlryo2TVPGGMMAH3egC+HIdYTx0k/DWaVC6HpfI4KLhXIKJesvdOpPwZd0qTgxTnxKMsbmhfyYtDBMwHHoMzyq2Wq/7ULeafazxucBM2iwJKxUoDb6+ITVsJmIDZ9Y6tEbockBxGEYQG9waRnQMKYLhtNEY3MI7AMP6aTupMagQJFDsCKM0DAOhLnvFQhupL3uXZOzWMTphXVa1SJl7Sxm5bcQ+9j+iljKtFvlonqPZnxDzqf9REBE8uqt9kcCD+yCVNG9Nn01i+XRVTtDCub9x59Y2XZNLoslKc0k7T1FbBkLOWuRalWyC9KDlWqt60EOMJMTcILHfU3xTuwb9lIznIo99+ecdLCXW54tBu1oHWWPpB4sV963q11d85CfIw5Qg/2kJuDOigSfcb+QtyPXMoM4iaVY4tMHEDSCqZjhRCNS+ck7t94PRblFZLqmFA2zqeUlhUZdyCawX5cbLEiDZtsUjlVVyEpfAx03CMm0/nktgRIszZzwUFCF77s/kMEpcsmcPt+UyiJEvX3S1u3i0WmCK7ZyFVS8B+B5NYie44RkVxy0JtcRm+Uw3uhQBnhqE5cnPE7oCvWOpbuY0CamOnljXlFdhj9ePxXSFfzhp7Y0kMaO5ySSvTvLyeCN1vnj20TNQQf94af/9xwBWUDggzAAAAHAQAJ0BKrQAtAA+3W6vUKinJKKnV0mZEBuJaW7haPmgAAdCDzOHSZEkIHJiK6dQQY5Ex/Sq/62Y670DervcitnYiogpiD03lcSOFEmtb+O43+mOjXlhmdYNkeKKUGOsGWFlHgyJIQ8K4c8zqZ9IW8VAnpQICA9fpEfLyJj+bOC1Ig8zh0mRJCByYilgAP76jWA9+eXmWa40La7qgvvPzgmZuwfB6qFJ5FbJb7CGsgAASyQMswNfDVOsGyoE1c39Zex0tBwjyanAAAAAAA==" alt=""></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('datorkomp')">Datorkomponent</li>
+
+                            <div class="main-container not-showing" id="datorkomp" >
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(8881)_13_Normal_SectionIcon.svg" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">Datorkomponenter</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('datorkomp')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner ">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Datorkomponenter</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Hårddisk & SSD</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Grafikkort</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Processor</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Moderkort</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datorchassi</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">NUC / Barebone</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">RAM-minne</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Nätverkskort</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Kylning</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Installationstillbehör</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Uppgraderingspaket</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu Datorkomponenter</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Outlet</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            
+                                        </div>
+                                        <div class="heading-under">
+                                        <h4 id="heading-under1">Inspiration & Guider</h4>
+                                        <ul class="heading-under2">
+                                            <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                        </ul>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="https://www.netonnet.se/GetFile/ProductImagePrimary/dator-surfplatta/laptop/laptop-14-16-tum/hp-hp-laptop-15-fc0024no(1031035)_618392_1_Normal_Large.webp" alt="dator" id="gaming-pic"></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('gaming')">Gaming</li>
+
+                            <div class="main-container not-showing" id="gaming">
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(8901)_1_Normal_SectionIcon.svg" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">Gaming</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('gaming')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Gaming</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Spelkonsoler & Spel</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Gamingdator</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Gamingskärm</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Gamingstolar & Gamingbord</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Gamingheadset</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Gamingtangentbord</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Gamingmus</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Rattar & Kontroller</a></li>
+                                        
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Gamingpaket</a></li>
+                                        
+                                        <li class="nav-item"><a href="#" class="nav-item__links">VR</a></li>
+                                        
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Streaming</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu Gaming</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Outlet</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            
+                                        </div>
+                                        <div class="heading-under">
+                                        <h4 id="heading-under1">Inspiration & Guider</h4>
+                                        <ul class="heading-under2">
+                                            <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                        </ul>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="https://www.netonnet.se/GetFile/BoxImageLarge/(22905)_1_Normal_Original.webp"  alt="gaming" id="gaming-pic"></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('fritid')">Hem & Fritid</li>
+
+                            <div class="main-container not-showing" id="fritid">
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(8883)_1_Normal_SectionIcon.svg" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">Hem & Fritid</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('fritid')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Hem & Fritid</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Grill</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Kaffemaskiner</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Dammsugare & Rengöring</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Klimat & Värme</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Smarta Hem</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Personvård</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Köksmaskiner</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Trärgård</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Verktyg</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Elfordon</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Bil & GPS</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links"></a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu Hem & Fritid</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                        </div>
+                                        <div class="heading-under">
+                                        <h4 id="heading-under1">Inspiration & Guider</h4>
+                                        <ul class="heading-under2">
+                                            <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                        </ul>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img id="pic11" src="img_folder/Traning.jpg" width="300px" height="400px" alt=""></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('tv')">TV</li>
+
+                            <div class="main-container not-showing" id="tv">
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(8885)_7_Normal_SectionIcon.svg" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">TV</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('tv')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i TV</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">75 tum och större</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">56-70 tum</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">46-55 tum</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">22-45 tum</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">OLED</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">QLED</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">TV och soundbar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">TV-tillbehör</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Projektor</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Mediaspelare</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Blu-ray & DVD-spelare</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu TV</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Outlet</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            
+                                        </div>
+                                        <div class="heading-under">
+                                        
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="/img-folder/tv-bild.jpg" alt="tv"></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('ljud')">Ljud</li>
+
+                            <div class="main-container not-showing" id="ljud">
+                            <div class="heading">
+                                <div class="pic-heading">
+                                    <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(18269)_1_Normal_SectionIcon.svg" alt=""></div>
+                                        <div class="heading-inner">
+                                            <h2 id="heading1">Ljud</h2>
+                                        </div>
+                                    </div>
+                                <div onclick="showContainer('ljud')" class="x">x</div>
+                            </div>
+                            
+                            <div class="main-container-inner">
+                                
+                                <div class="catagories">
+                                    <h4 id="catagoire">Kategorier</h4>
+                                    <ul class="list-inside">
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="catagories-side">
+                                    <div class="sidi1">
+                                    <div class="catagories-side-1">
+                                    <h4 id="just">Just nu Ljud</h4>
+                                    <div class="span">
+                                        <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                        <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                    </div>
+                                    <div class="heading-under">
+                                    <h4 id="heading-under1">Inspiration & Guider</h4>
+                                    <ul class="heading-under2">
+                                        <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="https://www.netonnet.se/GetFile/ProductImagePrimary/outlet/hem-fritid/navee-v50-nordic(1028299)_566139_1_Normal_Large.webp" alt=""></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('mobil')">Mobil & Smartwatch</li>
+
+                            <div class="main-container not-showing" id="mobil">
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(8886)_1_Normal_SectionIcon.svg" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">Mobil & Smartwatch</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('mobil')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu Mobil & Smartwatch</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                        </div>
+                                        <div class="heading-under">
+                                        <h4 id="heading-under1">Inspiration & Guider</h4>
+                                        <ul class="heading-under2">
+                                            <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                        </ul>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="https://www.netonnet.se/GetFile/ProductImagePrimary/mobil-smartwatch/mobiltelefontillbehor/skarmskydd/andersson-tempered-glass-screen-protector-for-apple-iphone-1313-pro(1020873)_483286_1_Normal_Large.webp" alt=""></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="navigation_option" onclick="showContainer('vitvaror')">Vitvaror</li>
+
+                            <div class="main-container not-showing" id="vitvaror">
+                                <div class="heading">
+                                    <div class="pic-heading">
+                                        <div class="pic" id="picture"><img src="https://www.netonnet.se/GetFile/SectionIcon/(17966)_1_Normal_SectionIcon.svg" alt=""></div>
+                                            <div class="heading-inner">
+                                                <h2 id="heading1">Vitvaror</h2>
+                                            </div>
+                                        </div>
+                                    <div onclick="showContainer('vitvaror')" class="x">x</div>
+                                </div>
+                                
+                                <div class="main-container-inner">
+                                    
+                                    <div class="catagories">
+                                        <h4 id="catagoire">Kategorier</h4>
+                                        <ul class="list-inside">
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Se allt i Dator & Surfplatta</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Laptop</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Stationära datorer</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Surfplattor</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datorskärmar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Nätverk</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Skrivare & Scanner</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Datortillbehör</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-item__links">Programvara</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="catagories-side">
+                                        <div class="sidi1">
+                                        <div class="catagories-side-1">
+                                        <h4 id="just">Just nu Vitvaror</h4>
+                                        <div class="span">
+                                            <a href="#" class="box1__links"><span class="box1">Fyndvaror</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Nyheter</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Topp 10</span></a>
+                                            <a href="#" class="box1__links"><span class="box1">Favoriter</span></a>
+                                        </div>
+                                        <div class="heading-under">
+                                        <h4 id="heading-under1">Inspiration & Guider</h4>
+                                        <ul class="heading-under2">
+                                            <li class="nav-item" id="heading-under-2"><a href="#" class="nav-item__links">Se Inspiration & Guider</a></li>
+                                        </ul>
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="pic_1">
+                                            <div class="pic_1_inner"><img src="https://www.netonnet.se/GetFile/DynamicContentImage/Info/leveranstjanster-for-vitvaror/1465x728-bortforsling2/(3738)_445650_9_Normal_Extra-8.webp" alt=""></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </ul>
                         <ul class="nav2">
                             <li class="navigation_option">Outlet</li>
@@ -175,9 +693,12 @@
         </div>
     </header>
 
+    <!--Rauf's Navigation function-->
 
+    
 
     <script src="assets/script/header/header-mobile_nav.js"></script> 
     <script src="assets/script/header/header-CartPopup.js"></script> 
+    <script src="assets/script/header/header-desktop_nav.js"></script>
 </body>
 </html>
