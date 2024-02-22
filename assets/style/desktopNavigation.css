@@ -15,10 +15,24 @@ main {height: 70vh;
 
 .nav-item {
     display: inline-block;
-    padding: 10px;
-    
-    
-    
+    padding: 7px 5px;
+    border-bottom: solid 0.1px;
+    border-left: transparent 10px;
+    border-right: transparent 10px;
+    border-color: rgb(172, 172, 172);
+    transition: 0.1s;
+    & .nav-item__links {
+        color: #337ab7;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+    &:hover {
+        background: rgba(7, 151, 214, 0.2);
+        & .nav-item__links {
+            margin-left: 5px;
+            transition: 0.1s;
+        }
+    }
 }
 
 .nav {
@@ -28,25 +42,23 @@ main {height: 70vh;
     justify-content: space-between;
     height: 40px;
     background: #fff;
-    
-
     margin-top: 50px;
     font-size: 13px;
     flex-wrap: wrap;
     position: relative;
     flex-direction: column;
     margin: 0 auto;
-    
-    
-    
-    
-    
 }
 .main-container {
     position: absolute;
     left: 0;
     top: 31px;
     z-index: 4;
+    width: 1100px;
+    padding: 10px;
+    height: calc(70vh + auto);
+    background:#fff;
+    margin-top: 15px;
 }
 
 a.nav-item__links:link  {
@@ -68,14 +80,6 @@ a.nav-item__links:hover {
     width:100%;
     background-color: #fff;
     padding-left:10px ;
-    
-}
-.main-container {
-    width: 1100px;
-    height: 70vh;
-    background:#fff;
-    margin-top: 15px;
-    position:absolute;
     
 }
 
@@ -113,7 +117,15 @@ a.nav-item__links:hover {
 .pic-heading {
     display: flex;
     column-gap: 20px;
-    
+    & .pic {
+        width: 48px;
+        height: 48px;
+        & i {
+            margin: 11px;
+            margin-left: 18px;
+            font-size: 29px;
+        }
+    }
 }
 .x {
      font-size: 30px;
@@ -132,19 +144,12 @@ a.nav-item__links:hover {
 #heading1 {
     padding-top: 12px;
 }
-.list-inside li{
+
+.list-inside {
+    width: 250px;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    font-size: 15px;
-    color: #0096db;
-    border-bottom:1px solid #f3eaea;
-    width: 326px;
-    height: 31px;
-    
-    
-    
-    
+
 }
 
 .list-inside li a {
@@ -191,61 +196,84 @@ a.nav-item__links:hover {
     margin-top:20px;
     border:1px solid lightgray;
     
-    }
-    .box1:hover{
-        background-color: rgb(250, 245, 245);
-    }
-    .heading-under {
-        display: flex;
-        margin-top: 110px;
-        padding-left: 50px;
-        flex-direction: column;
-        font-size: 15px;
-        row-gap: 7px;
+}
+.box1:hover{
+    background-color: rgb(250, 245, 245);
+}
+.heading-under {
+    display: flex;
+    margin-top: 110px;
+    padding-left: 50px;
+    flex-direction: column;
+    font-size: 15px;
+    row-gap: 7px;
         
-    }
-    #heading-under-2{
-        padding-left: 0px;
-        
-    }
-    .heading-under2 li a{
-        color: #0096db;
-    }
-    a.box1__links:link  {
-        text-decoration: none;
+}
 
+.heading-under2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    margin: 0px 7px;
+    & .nav-item {
+        border-bottom: solid 0.1px;
+        border-left: transparent 10px;
+        border-right: transparent 10px;
+        border-color: rgb(172, 172, 172);
+        transition: 0.1s;
+        & .nav-item__links {
+            color: #337ab7;
+            text-decoration: none;
+            transition: 0.1s;
+        }
+        &:hover {
+            background: rgba(7, 151, 214, 0.2);
+            & .nav-item__links {
+                margin-left: 5px;
+                transition: 0.1s;
+            }
+        }
     }
-    .pic_1 img{
-        display: flex;
-        width: 336px;
-        height: 336px;
-        padding-right: 5px;
-        
-    }
-    .sidi1 {
+}
 
-        display: flex;
-    }
-    #gaming-pic {
-        width: 300px;
-        height: 350px;
-        padding-top: 60px;
+a.box1__links:link  {
+    text-decoration: none;
+}
+
+.pic_1 img{
+    display: flex;
+    width: 336px;
+    height: 336px;
+    padding-right: 5px;
         
-    }
-    #pic11 {
-        width: 300px;
-        height: 300px;
-        padding-top: 10px;
-    }
-    .pic_1_inner {
-        padding-top: 20px;
-    }
+}
+
+.sidi1 {
+    display: flex;
+}
+
+#gaming-pic {
+    width: 300px;
+    height: 350px;
+    padding-top: 60px;    
+}
+
+#pic11 {
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+}
+.pic_1_inner {
+    padding-top: 20px;
+}
     
         
 
     
 
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     .nav {
         flex-flow: column  nowrap;
     }
@@ -256,4 +284,4 @@ a.nav-item__links:hover {
         display: flex;
         flex-direction: column;
     } 
-}
+} */
