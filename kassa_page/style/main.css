@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+.main_container {
+    display: inline;
+    
+}
+
+.main_container_inner {
+    display: flex;
+    justify-content: space-between;
+
+   max-width: 1231px;
+    height: 71px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    
+    border-bottom: 1px solid #c4c4c4;
+}
+#logo {
+    width: 186px;
+    height: 38px;
+}
+.main_container_inner_logo {
+    display: flex;
+    align-items: center;
+}
+.main_container_inner_paymentoptions {
+     display: flex;
+     align-items: center;
+     gap: 2px;
+     
+    
+}
+#resurs {
+    width: 84px;
+    height: 17px;
+    margin-right: 6px;
+    
+}
+#swish{
+    width: 92px;
+    height: 28px;
+    
+}
+#visa {
+      width: 55px;
+      height: 40px;
+
+}
+#master {
+       width: 61px;
+       height: 50px;
+}
+#amex {
+    width: 35px;
+    height: 35px;
+}
+
+    
+@media (max-width: 780px) {
+    .main_container_inner {
+        flex-direction: column;
+        align-items: center;
+        height: 88px;
+    }
+}
+.container {
+    display: flex;
+    max-width: 1240px;
+    height:53px ;
+    margin:0 auto;
+    background-color: #fff;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 25px;
+    & h5{
+         padding-right: 15px;
+         opacity: 70%;
+    }
+    
+
+}
+#privat {
+          margin-right:3px;
+          font-weight: bold;
+}
+#label_privat {
+    font-weight: bold;
+}
+
+#företag {
+    margin-left: 15px;
+    font-weight: bold;
+}
+#label_foretag {
+    font-weight: bold;
+    margin-left: 3px;
+}

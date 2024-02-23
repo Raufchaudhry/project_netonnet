@@ -71,7 +71,7 @@ a.nav-item__links:hover {
 }
 .main-container {
     width: 1100px;
-    height: 70vh;
+    height: auto;
     background:#fff;
     margin-top: 15px;
     position:absolute;
