@@ -77,6 +77,17 @@ font-size: 14px;
 .breadcrumbs{
 font-size:14px;
 }
+#myParagraph {
+    display: block; /* Initially visible */
+}
+#hiddenText{
+    display: none;
+}
+#readMoreBtn{
+    border: none;
+    color: var(--accent__surface--light);
+    background-color:var(--lightGray30);
+    cursor: pointer;}
 .subcatagory-col{
 
 max-width: 30%;
