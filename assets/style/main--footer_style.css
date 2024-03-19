@@ -17,7 +17,7 @@ footer {
         display: flex;
         flex-flow: column nowrap;
         gap: 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 /* Delivery info foot */
@@ -60,11 +60,9 @@ footer {
     max-width: 1280px;
     height: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: start;
-    justify-items: end;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     & a {
         text-decoration: none;
         &:hover {
@@ -77,6 +75,9 @@ footer {
             text-decoration: none;
         }
     }
+}
+hr {
+    display: none;
 }
 .member--card {
     min-width: 300px;
@@ -153,8 +154,8 @@ footer {
     height: 100%;
     margin: 0 auto;
     display: flex;
-    place-items: center;
-    
+    align-items: center;
+    justify-content: start;
     & a {
         text-decoration: none;
         &:hover {
@@ -166,9 +167,6 @@ span{
     & a .fa-solid{
         padding: 10px;
     }
-    & a {
-        font-size: 1rem;
-    }
 }
 hr {
     max-width: 1280px;
@@ -177,6 +175,7 @@ hr {
 #cookies{
     margin-left: auto;
 }
+
 .memberInfo {
     display: none;
     position: fixed;
@@ -231,28 +230,63 @@ hr {
 @media only screen and (max-width: 1199px) {
     footer {
         height: auto;
+    } 
+    .delivery--foot,
+    .foot--container{
+        width: 100vw;
     }
-    .inner--delivery__foot,
-    .inner--foot__container {
+    .inner--delivery__foot{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
-    .delivery--foot,
-    .foot--container{
-        width: 100%;
-    }
-    .inner--foot__container {
-        display: flex;
-        flex-flow: column wrap;
-        gap: 1rem;
-    }
+    
     .inner--member__card button {
         width: 80%;
         height: 90%;
     }
-    .bottom--foot__container {
+    .inner--foot__container {
+        display: flex;
+        gap: 1rem;
+    }
+    li {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    footer {
+        height: auto;
+    }
+    .delivery--foot,
+    .foot--container {
+        width: 100vw;
         display: flex;
     }
+    .inner--delivery__foot {
+        flex-direction: column;
+    }
+    .inner--foot__container {
+        flex-flow: column nowrap;
+        align-items: baseline;
+    }
+    a {
+        font-size: 0.9rem;
+    }
+    hr {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #000;
+    }
+    .inner--bottom__foot {
+        flex-flow: row wrap;
+        & a {
+            font-size: 0.8rem;
+        }
+        & #cookies {
+            font-size: 0.8rem;
+        }
+    }
+
 }
