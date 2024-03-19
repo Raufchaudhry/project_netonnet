@@ -177,34 +177,6 @@ hr {
 #cookies{
     margin-left: auto;
 }
-@media only screen and (max-width: 1199px) {
-    footer {
-        height: auto;
-    }
-    .inner--delivery__foot,
-    .inner--foot__container,
-    .inner--member__card {
-        flex-direction: column;
-        align-items: start;
-    }
-    .delivery--foot,
-    .foot--container,
-    .member--card {
-        width: 100%;
-    }
-    .inner--foot__container {
-        display: flex;
-        flex-direction: column;
-    }
-    .inner--member__card button {
-        width: 80%;
-        height: 90%;
-    }
-    #cookies {
-        grid-column: 10 / 13;
-        word-break: keep-all;
-    }
-}
 .memberInfo {
     display: none;
     position: fixed;
@@ -254,5 +226,33 @@ hr {
     & p {
         margin: 10px;
         font-size: smaller;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    footer {
+        height: auto;
+    }
+    .inner--delivery__foot,
+    .inner--foot__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .delivery--foot,
+    .foot--container{
+        width: 100%;
+    }
+    .inner--foot__container {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+    .inner--member__card button {
+        width: 80%;
+        height: 90%;
+    }
+    .bottom--foot__container {
+        display: flex;
     }
 }
