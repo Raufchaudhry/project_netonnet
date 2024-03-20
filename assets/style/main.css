@@ -14,6 +14,14 @@
     --textGrayLight: #a2a2a2;
 }
 
+
+
+@font-face {
+    font-family: "Gorditas", serif;
+    src: url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap');
+}
+  
+
 main {
     width: 100%;
     height: auto;
@@ -31,15 +39,36 @@ main {
     }
 }
 .big-slider {
-    width: 100%;
-    height: auto;
+    width: 1200px;
+    height: 375px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 40px;
+    margin-bottom: 40px;
     & .slider-container {
-        width: 1200px;
+        width: 900px;
+    }
+}
+
+.row-panels {
+    display: flex;
+    width: 265px;
+    height: 375px;
+    gap: 4px;
+    flex-direction: column;
+    & .panel {
+        flex: 1 0 75px;
+        height: calc(370/3);
+        background: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-family: "Gorditas", serif;
+        font-weight: 700;
     }
 }
 .puff{
@@ -111,7 +140,7 @@ main {
     padding-top: 25px;
     overflow-y: hidden;
     max-width: 1200px;
-    height: 90%;
+    height: auto;
     position: relative;
 }
 
@@ -120,7 +149,7 @@ main {
  .card-container{
     flex: 1 0 1280px;
     overflow-x: auto;
-    height: 100%;
+    height: auto;
     padding-bottom: 10px;
     display: flex;
     flex-wrap: nowrap;
@@ -138,9 +167,11 @@ main {
     margin: 10px;
     padding: 0px;
     line-height: 20px;
+
     & h3 ,.rating{
         margin: 10px;
         color: var(--textGrayDark);
+        text-decoration: none;
     }
      .card-icon{
         display: inline-block;
@@ -161,14 +192,14 @@ main {
         list-style-position: inside;
         color: var(--textGrayDark);
         padding-left:10px;
+        text-decoration: none;
       }
 }
     
 .product-items-img-holder{
     width: clamp(200px 100%, 200px);
     margin: 0 auto;
-   
-   position: relative;
+    position: relative;
     & img{
         object-fit: contain;
         width: 100%;
@@ -189,7 +220,7 @@ main {
    
     border-radius: 10px 0px 0px 10px;
     position: absolute;
-    top: 45%;
+    top: 33%;
     color: #000000;
     padding: 28px 18px; 
     font-size: bold;
