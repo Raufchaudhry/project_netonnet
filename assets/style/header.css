@@ -170,6 +170,7 @@ body {
     background: var(--white);
     display: flex;
     flex-direction: row;
+    position: relative;
     & input {
         width: 95%;
         height: 100%;
