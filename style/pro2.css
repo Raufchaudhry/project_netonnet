@@ -32,7 +32,7 @@ main{
 .puff{display: flex;
     flex-flow: row wrap;
     gap: 15px;
-    max-width: 1280px;
+    width: 1280px;
     margin:0 auto;
     background:var(--lightGray30);
 
@@ -106,7 +106,7 @@ main{
  .card-container{
     flex: 1 0 1280px;
     overflow-x: auto;
-    height: auto;
+    height: calc(100% + 17px);
     padding-bottom: 10px;
     display: flex;
     flex-wrap: nowrap;
@@ -120,7 +120,7 @@ main{
     flex-flow: column nowrap;
    align-items: center;
    justify-content: center;
-    height: auto;
+    height: 450px;
     margin: 10px;
     padding: 0px;
     line-height: 20px;
@@ -193,6 +193,6 @@ main{
 #right{
   
         right: 0px;
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 0px 10px 10px 0px;
     }
     

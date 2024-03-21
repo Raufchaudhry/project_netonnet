@@ -76,6 +76,7 @@ main {
     flex-flow: row wrap;
     gap: 15px;
     max-width: 1200px;
+    width: 100vw;
     margin: 0 auto;
     background:var(--lightGray30);
 
@@ -142,6 +143,7 @@ main {
     max-width: 1200px;
     height: auto;
     position: relative;
+    width: 100vw;
 }
 
  
@@ -222,7 +224,7 @@ main {
     position: absolute;
     top: 33%;
     color: #000000;
-    padding: 28px 18px; 
+    padding: 14px 9px; 
     font-size: bold;
     width: 10px;
     height: 100px;
@@ -232,12 +234,33 @@ main {
     
 }
 #left{
-    left: 0px;
-    border-radius: 0px 10px 10px 0px;
+   left: 0px;
+   border-radius: 0px 10px 10px 0px;
 }
 #right{
-  
-        right: 0px;
-        border-radius: 0px 10px 10px 0px;
-    }
+   right: 0px;
+   border-radius: 10px 0px 0px 10px;
+}
     
+@media only screen and (max-width: 1199px) {
+   
+   .main-container__inner {
+      width: 100vw;
+   }
+   .slider-container {
+      width: 100vw;
+   }
+   .big-slider {
+      align-items: baseline;
+      justify-self: center;
+      width: 100vw;
+      max-height: 850px;
+   }
+   .row-panels {
+      flex-flow: row nowrap;
+      width: 100vw;
+      height: 60px;
+      padding: 3px;
+   }
+}
+

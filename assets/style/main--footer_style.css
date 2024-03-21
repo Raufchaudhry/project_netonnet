@@ -144,6 +144,7 @@ hr {
 .socials--icons {
     grid-column: 4;
     font-size: 2rem;
+    margin-top: 30px;
 }
 .bottom--foot__container {
     width: 100%;
@@ -248,13 +249,13 @@ hr {
     }
     .inner--foot__container {
         display: flex;
-        gap: 1rem;
+        gap: 0.6rem;
     }
     li {
         font-size: 1rem;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     footer {
         height: auto;
     }
