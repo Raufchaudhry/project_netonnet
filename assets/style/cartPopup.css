@@ -1,3 +1,19 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blackOnyx1: #0F0F0F;
+    --lightGray10: #f2f2f2;
+    --lightGray20: #f3f3f3;
+    --lightGray30: #e5e5e5;
+    --lightGray40: #cccccc;
+    --lightGray50:#C7C7C7;
+    --accent__surface--dark: #015582;
+    --accent__surface--light: #0096DB;
+    --textGrayDark: #444;
+    --textGrayMiddle: #666666;
+    --textGrayLight: #a2a2a2;
+}
+
 .cart-overlay {
     position: fixed;
     width: 100%;
@@ -42,6 +58,47 @@
     border-bottom-style: solid;
     border-width: 0.001px;
     border-color: #b9b9b9;
+}
+
+.prod {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px var(--textGrayMiddle);
+    padding-bottom: 4px;
+    & img {
+        width: 30%;
+        height: 100%;
+        object-fit: contain;
+    }
+    & .itemcolumn {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        & h2 {
+            font-size: 1.6rem;
+        }
+        & p {
+            font-size: 1rem;
+            color: var(--textGrayLight);
+        }
+    }
+    & .remove {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        & i {
+            font-size: 1.5rem;
+            padding-top: 10px;
+            &:hover {
+                color: #ec2c34;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .cart-recommendations {

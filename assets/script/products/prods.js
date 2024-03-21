@@ -10,6 +10,7 @@ const netonnet_product =  [
         available:"internet",
         brand:"anderson",
         size:55,
+        qty: 0
     },
 
     {
@@ -24,6 +25,7 @@ const netonnet_product =  [
         available:"internet",
         brand:"toshiba",
         size:70,
+        qty: 0
     },
 
     {
@@ -37,7 +39,7 @@ const netonnet_product =  [
         available:"Borås",
         brand:"anderson",
         size:77,
-
+        qty: 0
     },
     
     {
@@ -50,7 +52,7 @@ const netonnet_product =  [
         available:"Borås",
         brand:"philips",
         size:58,
-        
+        qty: 0
     },
 
     {
@@ -65,6 +67,7 @@ const netonnet_product =  [
         available:"Falun",
         brand:"philips",
         size:65,
+        qty: 0
     },
 
     {
@@ -79,6 +82,7 @@ const netonnet_product =  [
         available:"Falun",
         brand:"samsung",
         size:70,
+        qty: 0
     },
 
     {
@@ -94,6 +98,7 @@ const netonnet_product =  [
         available:"internet",
         brand:"samsung",
         size:85,
+        qty: 0
     },
 
     {
@@ -109,6 +114,7 @@ const netonnet_product =  [
         available:"Falun",
         brand:"samsung",
         size:65,
+        qty: 0
     },
    
     {
@@ -123,6 +129,7 @@ const netonnet_product =  [
         available:"Falun",
         brand:"samsung",
         size:50,
+        qty: 0
     },
 
     {
@@ -137,6 +144,7 @@ const netonnet_product =  [
         available:"Göteborg Hisings Backa",
         brand:"samsung",
         size:32,
+        qty: 0
     },
 
     {
@@ -151,6 +159,7 @@ const netonnet_product =  [
         available:"Göteborg Hisings Backa",
         brand:"toshiba",
         size:40,
+        qty: 0
     },
 
     {
@@ -165,6 +174,7 @@ const netonnet_product =  [
         available:"Göteborg Hisings Backa",
         brand:"toshiba",
         size: 44,
+        qty: 0
     },
 
     {
@@ -178,7 +188,8 @@ const netonnet_product =  [
         category: "UHD", 
         available: "Borås Viared",
         brand: "samsung",
-        size: 65 
+        size: 65, 
+        qty: 0
     }, 
 
     {
@@ -192,7 +203,8 @@ const netonnet_product =  [
         category: "OLED", 
         available: 'internet', 
         brand: "philips", 
-        size: 42
+        size: 42, 
+        qty: 0
     }, 
 
     {
@@ -206,7 +218,8 @@ const netonnet_product =  [
         category: "QLED", 
         brand: "Samsung", 
         available: "Borås",
-        size: 43
+        size: 43, 
+        qty: 0
     }, 
 
     {
@@ -220,7 +233,8 @@ const netonnet_product =  [
         category: "QLED", 
         brand: "Toshiba", 
         available: 'Falun', 
-        size: 43
+        size: 43, 
+        qty: 0
     }, 
 
     {
@@ -235,7 +249,8 @@ const netonnet_product =  [
         tag: "Kolla priset", 
         brand: "Sony", 
         available: 'internet', 
-        size: 55
+        size: 55, 
+        qty: 1
     }, 
 
     {
@@ -249,7 +264,8 @@ const netonnet_product =  [
         tag: 'Rekommenderas', 
         brand: "LG", 
         available: 'internet', 
-        size: 48
+        size: 48, 
+        qty: 0
     }, 
 
 ];
