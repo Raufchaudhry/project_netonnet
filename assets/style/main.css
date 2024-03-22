@@ -40,14 +40,14 @@ main {
 }
 .big-slider {
     width: 1200px;
-    height: 375px;
+    /*height: 375px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    /*padding-bottom: 40px;
+    margin-bottom: 40px;*/
     & .slider-container {
         width: 900px;
     }
@@ -252,17 +252,28 @@ main {
    }
    .big-slider {
       align-items: baseline;
-      height: auto;
-      margin: 0;
-      padding: 0;
+      justify-self: center;
       width: 100vw;
       max-height: 850px;
    }
    .row-panels {
       flex-flow: row nowrap;
       width: 100vw;
-      height: auto;
+      height: 60px;
       padding: 3px;
    }
+   
+   
+   .mySliderContainer {
+	   width: 100%; 
+   }
+	
+	.big-slider {
+    
+    & .slider-container {
+        width: 100%;
+    }
+}
+
 }
 
