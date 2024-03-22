@@ -169,10 +169,6 @@ span{
         padding: 10px;
     }
 }
-hr {
-    max-width: 1280px;
-    margin: 0 auto;
-}
 #cookies{
     margin-left: auto;
 }
@@ -258,6 +254,12 @@ hr {
 @media only screen and (max-width: 600px) {
     footer {
         height: auto;
+        & hr {
+         display: block;
+         height: 2px;
+         width: 100vw;
+         background: #000;
+     }
     }
     .delivery--foot,
     .foot--container {
@@ -273,12 +275,6 @@ hr {
     }
     a {
         font-size: 0.9rem;
-    }
-    hr {
-        display: block;
-        height: 2px;
-        width: 100%;
-        background: #000;
     }
     .inner--bottom__foot {
         flex-flow: row wrap;
