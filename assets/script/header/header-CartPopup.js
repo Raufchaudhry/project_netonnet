@@ -1,7 +1,9 @@
 let cartMenu = document.getElementById("cartMenu")
 let cartBtn = document.getElementById("cartBtn")
 let cartContent = document.getElementById('cartContent')
+let cartAmont = document.getElementById('cartAmount')
 let products = window.netonnet_product
+let localproducts = localStorage.getItem()
 
 function openCartMenu() {
     cartMenu.style.display = "flex"
@@ -18,17 +20,34 @@ cartMenu.addEventListener("click", function(event) {
     } 
 });
 
+function deleteProd(index) {
+    products[index].qty = 0
+    updateCartProds()
+}
+
+function addProd(index) {
+    products[index].qty += 1
+    updateCartProds()
+}
+
+function removeProd(index) {
+    if (products[index].qty == 1) {
+        return
+    }
+    products[index].qty += -1
+    updateCartProds()
+}
 
 function updateCartProds() {
+    let quantity = 0
     let cartContentHTML = ''
-    products.forEach(prod => {
+    products.forEach((prod, index) => {
     let prodname = prod.description__text;
     let prodpic = prod.image
     let prodid = prod.image__alt;
     let prodqty = prod.qty;
+    quantity += prodqty 
     if (prodqty >= 1) {
-        console.log(prodqty)
-
         cartContentHTML += `
         <div class="prod">
         <img src="${prodpic}" alt="item">
@@ -38,7 +57,11 @@ function updateCartProds() {
             <p>Quantity: ${prodqty}</p>
         </div>
         <div class="remove">
-            <i class="fa-solid fa-trash"></i>
+            <i class="fa-solid fa-trash" onClick='deleteProd(${index})'></i>
+            <div class="row-quantity">
+                <button id="quantityRemove" onClick='removeProd(${index})'><i class="fa-solid fa-minus"></i></button>
+                <button id="quantityAdd" onCLick='addProd(${index})'><i class="fa-solid fa-plus"></i></button>
+            </div>
         </div>
     </div>
         `} 
@@ -48,15 +71,18 @@ function updateCartProds() {
         cartContent.innerHTML = `<h2 id="empty">Kundvagnen är tom</h2>`;
     } else {
         cartContent.innerHTML = cartContentHTML;
+        cartAmont.innerHTML = quantity
     }
 
     // Adjust cartContent styles based on the presence of items
     if (products.some(prod => prod.qty > 0)) {
         cartContent.style.justifyContent = 'start';
         cartContent.style.alignItems = 'start';
+        cartAmont.style.display = 'flex'
     } else {
         cartContent.style.justifyContent = 'center';
         cartContent.style.alignItems = 'center';
+        cartAmont.style.display = 'none'
     }
 }
 

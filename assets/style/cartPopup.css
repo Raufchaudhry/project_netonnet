@@ -88,14 +88,51 @@
     & .remove {
         width: 10%;
         display: flex;
-        justify-content: center;
-        align-items: start;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
         & i {
             font-size: 1.5rem;
             padding-top: 10px;
             &:hover {
                 color: #ec2c34;
                 cursor: pointer;
+            }
+        }
+        & .row-quantity {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            & #quantityAdd, #quantityRemove {
+                margin-top: 4px;
+                width: 20px;
+                height: 20px;
+                background: var(--lightGray20);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & i {
+                    padding-top: 0px;
+                    font-size: 0.8rem;
+                }
+
+            }
+            & #quantityAdd {
+                border-radius: 0 7px 7px 0;
+                & i {
+                    &:hover {
+                        color: #0096DB;
+                    }
+                }
+            }
+            & #quantityRemove {
+                border-radius: 7px 0 0 7px;
+                & i {
+                    &:hover {
+                        color: #ec2c34;
+                    }
+                }
             }
         }
     }
