@@ -23,7 +23,7 @@ function productSearch() {
             let productItem = document.createElement('p');
             productItem.textContent = productss[i].description__text;
             productItem.addEventListener('click', function() {
-                alert(productss[i].image__alt)
+                localStorage.setItem('productId', productss[i].image__alt)
             })
             show.appendChild(productItem); // Append each matching product
         }

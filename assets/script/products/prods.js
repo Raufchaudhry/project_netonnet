@@ -250,7 +250,7 @@ const netonnet_product =  [
         brand: "Sony", 
         available: 'internet', 
         size: 55, 
-        qty: 1
+        qty: 0
     }, 
 
     {
