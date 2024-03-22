@@ -3,7 +3,7 @@ let cartBtn = document.getElementById("cartBtn")
 let cartContent = document.getElementById('cartContent')
 let cartAmont = document.getElementById('cartAmount')
 let products = window.netonnet_product
-let localproducts = localStorage.getItem()
+let localproducts = localStorage.getItem('localProds')
 
 function openCartMenu() {
     cartMenu.style.display = "flex"
@@ -39,6 +39,7 @@ function removeProd(index) {
 }
 
 function updateCartProds() {
+    console.log(localproducts)
     let quantity = 0
     let cartContentHTML = ''
     products.forEach((prod, index) => {
@@ -60,7 +61,7 @@ function updateCartProds() {
             <i class="fa-solid fa-trash" onClick='deleteProd(${index})'></i>
             <div class="row-quantity">
                 <button id="quantityRemove" onClick='removeProd(${index})'><i class="fa-solid fa-minus"></i></button>
-                <button id="quantityAdd" onCLick='addProd(${index})'><i class="fa-solid fa-plus"></i></button>
+                <button id="quantityAdd" onClick='addProd(${index})'><i class="fa-solid fa-plus"></i></button>
             </div>
         </div>
     </div>

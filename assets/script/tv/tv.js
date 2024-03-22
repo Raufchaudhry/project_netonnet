@@ -22,7 +22,15 @@ function slideshow(num){
     slides[num].style.display = "block";
   }
 
-
+function addToCart(index) {
+    if(products[index].qty === 0){
+        netonnet__product[index].qty += 1
+        localStorage.setItem('localProds', JSON.parse(netonnet__product))
+        updateCartProds()
+    } else {
+        return
+    }
+}
 
 function showProds(products){
 for(i=0;i<products.length;i++){
@@ -48,7 +56,7 @@ for(i=0;i<products.length;i++){
        
         
         <div class="add-items">
-        <button class="button">Lägg i cart</button>
+        <button class="button" onClick='addToCart(${i})'>Lägg i kundvagn</button>
      
        </div>
        </div>
@@ -62,16 +70,6 @@ for(i=0;i<products.length;i++){
         }
         
       }     
-      // Possible click function for next page
-    //   let myProds = document.getElementsByClassName('product')
-    //   myProds =[...myProds]
-    //   myProds.forEach(prodEl=>{
-    //     prodEl.addEventListener('click',()=>{
-    //         alert('prod added')
-    //         localStorage.setItem('product',JSON.stringify(products[i]))
-    //         window.open('prod.html')
-    //     })
-    //   })
 }
 
 
