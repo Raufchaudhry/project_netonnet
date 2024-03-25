@@ -3,7 +3,8 @@ let cartBtn = document.getElementById("cartBtn")
 let cartContent = document.getElementById('cartContent')
 let cartAmont = document.getElementById('cartAmount')
 let products = window.netonnet_product
-let localproducts = localStorage.getItem('localProds')
+let localproducts = JSON.parse(localStorage.getItem('localProds'))
+
 
 function openCartMenu() {
     cartMenu.style.display = "flex"
@@ -42,7 +43,7 @@ function updateCartProds() {
     console.log(localproducts)
     let quantity = 0
     let cartContentHTML = ''
-    products.forEach((prod, index) => {
+    localproducts.forEach((prod, index) => {
     let prodname = prod.description__text;
     let prodpic = prod.image
     let prodid = prod.image__alt;
@@ -76,7 +77,7 @@ function updateCartProds() {
     }
 
     // Adjust cartContent styles based on the presence of items
-    if (products.some(prod => prod.qty > 0)) {
+    if (localproducts.some(prod => prod.qty > 0)) {
         cartContent.style.justifyContent = 'start';
         cartContent.style.alignItems = 'start';
         cartAmont.style.display = 'flex'

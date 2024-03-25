@@ -270,4 +270,6 @@ const netonnet_product =  [
 
 ];
 
+localStorage.setItem('localProds', JSON.stringify(netonnet_product))
+
 window.netonnet_product = netonnet_product

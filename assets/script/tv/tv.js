@@ -25,7 +25,7 @@ function slideshow(num){
 function addToCart(index) {
     if(products[index].qty === 0){
         netonnet__product[index].qty += 1
-        localStorage.setItem('localProds', JSON.parse(netonnet__product))
+        localStorage.setItem('localProds', JSON.stringify(netonnet__product))
         updateCartProds()
     } else {
         return
