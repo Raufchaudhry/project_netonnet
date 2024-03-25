@@ -3,7 +3,7 @@ let cartBtn = document.getElementById("cartBtn")
 let cartContent = document.getElementById('cartContent')
 let cartAmont = document.getElementById('cartAmount')
 let products = window.netonnet_product
-let localproducts = JSON.parse(localStorage.getItem('localProds'))
+
 
 
 function openCartMenu() {
@@ -23,11 +23,13 @@ cartMenu.addEventListener("click", function(event) {
 
 function deleteProd(index) {
     products[index].qty = 0
+    localStorage.setItem('localProds', JSON.stringify(products))
     updateCartProds()
 }
 
 function addProd(index) {
     products[index].qty += 1
+    localStorage.setItem('localProds', JSON.stringify(products))
     updateCartProds()
 }
 
@@ -36,11 +38,14 @@ function removeProd(index) {
         return
     }
     products[index].qty += -1
+    localStorage.setItem('localProds', JSON.stringify(products))
     updateCartProds()
 }
 
 function updateCartProds() {
+    let localproducts = JSON.parse(localStorage.getItem('localProds'))
     console.log(localproducts)
+    console.log(products)
     let quantity = 0
     let cartContentHTML = ''
     localproducts.forEach((prod, index) => {
