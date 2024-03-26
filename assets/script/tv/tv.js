@@ -32,6 +32,11 @@ function addToCart(index) {
     }
 }
 
+function nextPage(index) {
+    localStorage.setItem('productId', JSON.stringify(productss[index].image__alt))
+    window.open('product-page.html', '_self')
+}
+
 function showProds(products){
 for(i=0;i<products.length;i++){
     document.getElementById("main--content").innerHTML+= 
@@ -41,7 +46,7 @@ for(i=0;i<products.length;i++){
     <div class= "product-image">
     <img src="${products[i].image}" alt="${products[i].image__alt}"/>
     </div>
-    <div class = "text-holder1">
+    <div class = "text-holder1" onClick='nextPage(${i})'>
     <h4>${products[i].description__text}<h4>
     <h3 id="${[i]}-stars"></h3>  
     <div class="discription"><ul> 
@@ -68,8 +73,7 @@ for(i=0;i<products.length;i++){
         else{
             document.getElementById(`${[i]}-stars`).innerHTML += `<i style="color:grey;" class="fa-solid fa-star"></i>`
         }
-        
-      }     
+    } 
 }
 
 

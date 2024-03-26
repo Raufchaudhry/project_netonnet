@@ -44,8 +44,6 @@ function removeProd(index) {
 
 function updateCartProds() {
     let localproducts = JSON.parse(localStorage.getItem('localProds'))
-    console.log(localproducts)
-    console.log(products)
     let quantity = 0
     let cartContentHTML = ''
     localproducts.forEach((prod, index) => {

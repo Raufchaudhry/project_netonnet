@@ -4,32 +4,33 @@ let show = document.getElementById('searched-products');
 let productss = window.netonnet_product;
 
 function productSearch() {
-    let search = input_bar.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
-    show.innerHTML = ''; // Clear previous search results
+    let search = input_bar.value.trim().toLowerCase(); 
+    show.innerHTML = ''; 
     console.log(productss)
     
     if (search === '') {
-        show.style.display = 'none'; // Hide products if search bar is empty
+        show.style.display = 'none'; 
         return;
     }
     
-    let found = false; // Flag to check if any products are found
+    let found = false; 
     
     for (let i = 0; i < productss.length; i++) {
         let prodname = productss[i].description__text.toLowerCase();
-        if (prodname.includes(search)) { // Use includes() to match substrings
+        if (prodname.includes(search)) { 
             found = true;
             show.style.display = 'flex';
             let productItem = document.createElement('p');
             productItem.textContent = productss[i].description__text;
             productItem.addEventListener('click', function() {
                 localStorage.setItem('productId', JSON.stringify(productss[i].image__alt))
+                window.open('product-page.html', '_self')
             })
-            show.appendChild(productItem); // Append each matching product
+            show.appendChild(productItem); 
         }
     }
     
     if (!found) {
-        show.style.display = 'none'; // Hide products if no matches found
+        show.style.display = 'none'; 
     }
 }

@@ -343,7 +343,11 @@ line-height: 25px;}
  }
  .text-holder1{
     width: 100%;
-   
+   &:hover {
+    color: #0096DB;
+    text-decoration: underline;
+    cursor: pointer;
+   }
  }
  & h4{
     color: var(--textGrayDark);

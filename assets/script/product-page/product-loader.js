@@ -5,11 +5,22 @@ let productPrice = document.getElementById('productPrice')
 let productImage = document.getElementById('productImage')
 let productStar = document.getElementById('star')
 let productDots = document.getElementById('productDots')
+let insertToCart = document.getElementById('addToCart')
 let allProducts = window.netonnet_product
 
 function findIndex(array, index) {
     let foundProd = array.map(element => element.image__alt)
     return foundProd.indexOf(index)
+}
+
+function addToCart(index) {
+    if(allProducts[index].qty === 0){
+        allProducts[index].qty += 1
+        localStorage.setItem('localProds', JSON.stringify(allProducts))
+        updateCartProds()
+    } else {
+        return
+    }
 }
 
 function productLoad() {
@@ -24,9 +35,21 @@ function productLoad() {
     productImage.src = allProducts[index].image
     productPrice.innerHTML = allProducts[index].price
     productDots.innerHTML = ''
-    productDots.innerHTML += allProducts[index].description__bulet.foreach(element => {
+    allProducts[index].description__bulet.forEach(element => {
+        productDots.innerHTML += `<li>${element}</li>`
+    })
+    productStar.innerHTML = ''
+    for (let i = 0; i < 5; i++) {
+        if(i < allProducts[index].rating__stars) {
+            productStar.innerHTML += '&#9733;'
+        } else {
+            productStar.innerHTML += '&#9734;'
+        }
+    }
+
+    insertToCart.addEventListener('click', function() {
+        addToCart(index)
         console.log('working')
-        productDots.innerHTML = element
     })
 }
 
