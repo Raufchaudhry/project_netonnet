@@ -1,0 +1,602 @@
+.main-product {
+    max-width: 1200px;
+    height: auto;
+}
+
+.main-product-inner {
+    width: 1228px;
+    height: 870.13px;
+    background-color: #fff; /* Change to desired background color */
+    margin:0 auto;
+    margin-top: 50px; /* Adjust margin top as needed */
+}
+
+.insideone {
+    display: flex;
+    width: 921px;
+    height: 484.42px;
+    
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+    & h2 {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 10%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+        padding-left: 12px;
+        
+        
+    }
+    & h3 {
+        font-size: 15px;
+        padding-left: 13px;
+        line-height: 19px;
+        color: #a2a2a2;
+        & a {
+            text-decoration: none;
+            color: #a2a2a2;
+            
+        }
+        & span {
+            margin-left: 5px;
+        }
+    }
+    
+}
+#star {
+    
+    color: #ffce17;
+    font-size: 20px;
+    padding-left: 13px;
+}
+#ranking {
+    margin-left: 8px;
+} 
+#stars {
+    text-decoration: none;
+}
+#number {
+    margin-left: 7px;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #a2a2a2;
+}
+#recen {
+    text-decoration: none;
+    color: #0797d6;
+    font-size: 15px;
+}
+#recen:hover{
+    text-decoration: underline;
+}
+
+.containertwo {
+    display: flex;
+    width:307px;
+    height: 820.13px;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.main-product-inner-inside {
+    display: flex;
+    flex-direction: row;
+}
+.insideone {
+    display: flex;
+    width: 921px;
+    height: 100.42px;
+    flex-direction: column;
+    
+}
+.tryghet {
+    display: flex;
+    gap:5px;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tryghetdiv {
+    display: flex;
+    gap: 10px;
+    
+}
+.tryghetdiv a{
+    text-decoration: none;
+    color:#555;
+}
+.tryghetdivone a:hover{
+    color: #0797d6;
+    text-decoration: underline;
+}
+
+
+
+#greater {
+    color: #0797d6;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+#greater a:hover {
+    color: #0797d6;
+}
+.bytavaror {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+}
+.bytavarorone{
+    font-weight: bold;
+}
+.bytavarortwo a{
+    text-decoration: none;
+    color: #0797d6;
+}
+.bytavarortwo a:hover {
+    text-decoration: underline;
+}
+
+.insideoneunder {
+    display: flex;
+    width: 921px;
+    height: 384px;
+    
+}
+
+
+.checkbox-container {
+    display: flex;
+    border: 1px solid lightgray;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 5px;
+    align-items: center;
+}
+.checkbox-container:hover {
+    cursor: pointer;
+}
+.checkbox-container input{
+    width: 20px;
+    height: 20px;
+}
+.kundvagn {
+    display: flex;
+    margin-top: 15px;
+    
+}
+.kundvagna {
+    display: flex;
+    width: 164.08px;
+    height: 42px;
+    background-color: #0797d6;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    border-radius: 3px;
+    
+}
+.kundvagna a{
+    color: #fff;
+    text-decoration: none;
+}
+.kundvagna:hover {
+    background-color: #2b7797;
+}
+.kundvagnb {
+    display: flex;
+    width: 127.91px;
+    height: 42px;
+    border :1px solid #0797d6;
+    margin-left: 10px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+.kundvagnb a {
+    color: #0797d6;
+    text-decoration: none;
+}
+.kundvagnb:hover{
+    background-color: #d8e3e7;
+}
+.partone {
+    display: flex;
+    width: 306.98px;
+    height: 383px;
+    flex-direction: column;
+    
+}
+.prodlist {
+    display: flex;
+    font-size: 16px;
+    color: #555;
+    padding-left: 40px;
+    padding-top: 70px;
+    opacity: 80%;
+    
+}
+.prodlist ul li {
+    margin-top: 10px;
+}
+.prodlista {
+    display: flex;
+    margin-top: 50px;
+    width: 264.98px;
+    height: 94.25px;
+    font-size: 13px;
+    color: #555;
+    border: 1px solid #dfd2d2;
+    opacity: 80%;
+    margin-left: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.prodlista p {
+    margin-top: 2px;
+}
+
+
+
+
+.parttwo {
+    display: flex;
+    width: 613.98px;
+    height: 383px;
+    
+}
+.rowone a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #0797d6;
+    font-family: "Open Sans", sans-serif;
+}
+
+.rowone a:hover {
+    text-decoration: underline;
+}
+
+.indsidetwo {
+    display: flex;
+    width: 307px;
+    height: 376.69px;
+    
+    flex-direction: column;
+}
+.divone {
+    display: flex;
+    width: 287px;
+    height: 132.13px;
+    background-color: #fff;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.pricebag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-top: 3px;
+}
+.pricebagone{
+    display: flex;
+    width: 142px;
+    height: 50px;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.pricebagtwo{
+    display: flex;
+    width: 142px;
+    height: 50px;
+    
+    justify-content: center;
+    align-items: center;
+    color: #f00;
+    font-size: 30px;
+}
+.vertical-line {
+    width: 1px; /* Width of the vertical line */
+    height: 40px; /* Height of the line, same as the height of the price containers */
+    background-color: rgb(192, 185, 185); /* Color of the line */
+    margin-top: 5px;
+}
+.forsakring {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 7px;
+    background-color: #fff;
+    font-size: 13px;
+    
+}
+.infoside a{
+    text-decoration: none;
+    color: #0797d6;
+}
+.infoside a:hover {
+    text-decoration: underline;
+}
+.insidetwoa{
+    display: flex;
+    width: 290.36px;
+    height: 137.69px;
+    background-color:#f2f2f2;
+    flex-direction: column;
+    
+}
+.frifrakt {
+    display: flex;
+    margin-left: 10px;
+}
+.frakt {
+    font-size: 13px;
+    color: #555;
+    margin-left: 10px;
+}
+.firstrotate {
+    display: flex;
+    
+    
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.rotate {
+    padding-top: 10px;
+    margin-left: 10px;
+    color: #555;
+    
+    
+}
+.fontbild {
+    color: #555;
+}
+.clock {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.clockk{
+    color: #555;
+}
+.sammadag {
+    font-size: 13px;
+    color: #555;
+    margin-left: 14px;
+}
+.afterarrow {
+    font-size: 13px;
+    color: #555;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.delbetalainfo {
+    display: flex;
+    gap: 5px;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    margin-top: 2px;
+    padding: 10px;
+}
+.info a {
+    text-decoration: none;
+    color: #0797d6;
+    margin-left: 10px;
+}
+.info:hover {
+    text-decoration: underline;
+}
+.insidetwob {
+    display: flex;
+    width: 290px;
+    height: 170.75px;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    padding-left: 5px;
+    margin-right: 10px;
+    
+}
+.postnummer{
+    font-size: 13px;
+    color: #555;
+    padding-left: 10px;
+}
+.postnumer{
+    display: flex;
+    width: 255px;
+    height: 37.13px;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.containervisa {
+    display: flex;
+    margin-top: 15px;
+    
+}
+input {
+    
+    width: 100px;
+    height: 38.56px;
+    border: 1px solid #d3c7c7;
+    margin-left: 10px;
+}
+.search-button {
+    width: 51.59px;
+    height: 38.56px;
+    border: 1px solid #0797d6;
+    color: #0797d6;
+    
+}
+.search-button:hover {
+    background-color: #c7d9e0;
+}
+.tikk {
+    display: flex;
+    width: 275px;
+    height: 24px;
+    margin-top: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+.tik {
+    color: rgb(68, 231, 68);
+    padding-left: 10px;
+    font-size: 25px;
+}
+.internet {
+    font-size: 15px;
+}
+.insidetwoc {
+    display: flex;
+    width: 307px;
+    height: 46px;
+    
+}
+.insidetwoc-inner {
+    display: flex;
+    width: 290px;
+    height: 70.81px;
+    border: 1px solid #d4c1c1;
+    padding: 10px;
+    flex-direction: column;
+    
+}
+.textinner{
+    font-size: 13px;
+    color: #555;
+}
+.insidetwocthree {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    
+    
+}
+.map {
+    color:#0797d6;
+    height: 30px;
+    margin-left: 10px;
+}
+.välja {
+    font-size: 13px;
+    margin-left: 10px;
+    flex-wrap: nowrap;
+}
+.downarrow {
+    color: #555;
+    margin-left: 100px;
+}
+
+.lager {
+    font-size: 15px;
+    margin-right: 60px;
+    color: #a08c8c;
+}
+.dropdown {
+    color: #555;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 613.98px;
+    margin: auto;
+    overflow: hidden;
+    display: flex; /* Added to make slides stack vertically */
+    flex-direction: column; /* Added to make slides stack vertically */
+}
+
+/* Styling for individual slides */
+.slide {
+    margin-bottom: 20px; /* Add space between slides */
+    overflow: hidden;
+    position: relative;
+}
+#leftArrow {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    
+}
+#rightArrow {
+    position: absolute;
+    bottom: 10px;
+    left: 300px;
+}
+
+/* Styling for the big image in the first slide */
+.big-image-container {
+    width: 355px;
+    height: 289px;
+    overflow: hidden;
+}
+
+.big-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the small images on the second slide */
+.small-image-container {
+    width: 180px; /* Adjust to show all six images */
+    height: 55px;
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    white-space: nowrap;   
+    direction: ltr; /* Set the direction to left-to-right */
+    display: flex; /* Change to flex to create row layout */
+    flex-direction: row; /* Create row layout */
+    margin-top: 30px;
+    align-items: center;
+    gap: 6px;
+    margin-left: 100px;
+}
+
+.small-image {
+    width: 46px; 
+    height: 46px;
+    margin-right: 5px; /* Adjust spacing between images */
+    cursor: pointer;
+    border: 1px solid rgb(240, 227, 227);
+}
+
+.small-image img {
+    width: 46px;
+    height: 46px;
+}
+
+.small-image.center img {
+    border-color: black;
+}
+
+.highlighted img {
+    border-color: red;
+}
+
+/* Styling for arrow buttons */
+.scroll-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 5px;
+}
