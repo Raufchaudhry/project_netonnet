@@ -23,16 +23,21 @@ function slideshow(num){
   }
 
 function addToCart(index) {
-    if(products[index].qty === 0){
-        netonnet__product[index].qty += 1
-        localStorage.setItem('localProds', JSON.stringify(netonnet__product))
+    let localArray = JSON.parse(localStorage.getItem('localProds'))
+    if(localArray[index].qty === 0){
+        localArray[index].qty += 1
+        localStorage.setItem('localProds', JSON.stringify(localArray))
         updateCartProds()
     } else {
         return
     }
 }
 
-function nextPage(index) {
+function nextPage(event, index) {
+    console.log(event.target.className)
+    if(!event.target.classList.contains('text-holder1')) {
+        return
+    }
     localStorage.setItem('productId', JSON.stringify(productss[index].image__alt))
     window.open('product-page.html', '_self')
 }
@@ -46,7 +51,7 @@ for(i=0;i<products.length;i++){
     <div class= "product-image">
     <img src="${products[i].image}" alt="${products[i].image__alt}"/>
     </div>
-    <div class = "text-holder1" onClick='nextPage(${i})'>
+    <div class = "text-holder1" onClick='nextPage(event, ${i})'>
     <h4>${products[i].description__text}<h4>
     <h3 id="${[i]}-stars"></h3>  
     <div class="discription"><ul> 
@@ -158,7 +163,7 @@ let checkedCats=[]
                         <div class= "product-image">
                         <img src="${tv.image}" alt="${tv.image__alt}"/>
                         </div>
-                        <div class = "text-holder1">
+                        <div class = "text-holder1" onClick='nextPage(${i})'>
                         <h4>${tv.description__text}<h4>
                         <h3 id="${[i]}-stars"></h3>  
                         <div class="discription">
@@ -174,7 +179,7 @@ let checkedCats=[]
                            
                             
                             <div class="add-items">
-                           <button class="button">Lag i cart</button>
+                           <button class="button" onClick='addToCart(${i})'>Lägg i kundvagn</button>
                          
                            </div>
                            </div>

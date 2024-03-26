@@ -271,3 +271,7 @@ const netonnet_product =  [
 ];
 
 window.netonnet_product = netonnet_product
+
+if (!localStorage.getItem('localProds')) {
+    JSON.parse(localStorage.setItem('localProds', netonnet_product))
+} 

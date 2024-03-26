@@ -14,9 +14,11 @@ function findIndex(array, index) {
 }
 
 function addToCart(index) {
-    if(allProducts[index].qty === 0){
-        allProducts[index].qty += 1
-        localStorage.setItem('localProds', JSON.stringify(allProducts))
+    let localArray = JSON.parse(localStorage.getItem('localProds'))
+    if(localArray[index].qty === 0){
+        localArray[index].qty += 1
+        console.log(localArray[index])
+        localStorage.setItem('localProds', JSON.stringify(localArray))
         updateCartProds()
     } else {
         return
@@ -48,8 +50,8 @@ function productLoad() {
     }
 
     insertToCart.addEventListener('click', function() {
-        addToCart(index)
         console.log('working')
+        addToCart(index)
     })
 }
 

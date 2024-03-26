@@ -22,23 +22,26 @@ cartMenu.addEventListener("click", function(event) {
 });
 
 function deleteProd(index) {
-    products[index].qty = 0
-    localStorage.setItem('localProds', JSON.stringify(products))
+    let localArray = JSON.parse(localStorage.getItem('localProds'))
+    localArray[index].qty = 0
+    localStorage.setItem('localProds', JSON.stringify(localArray))
     updateCartProds()
 }
 
 function addProd(index) {
-    products[index].qty += 1
-    localStorage.setItem('localProds', JSON.stringify(products))
+    let localArray = JSON.parse(localStorage.getItem('localProds'))
+    localArray[index].qty += 1
+    localStorage.setItem('localProds', JSON.stringify(localArray))
     updateCartProds()
 }
 
 function removeProd(index) {
-    if (products[index].qty == 1) {
+    let localArray = JSON.parse(localStorage.getItem('localProds'))
+    if (localArray[index].qty == 1) {
         return
     }
-    products[index].qty += -1
-    localStorage.setItem('localProds', JSON.stringify(products))
+    localArray[index].qty += -1
+    localStorage.setItem('localProds', JSON.stringify(localArray))
     updateCartProds()
 }
 
