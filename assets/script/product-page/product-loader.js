@@ -7,17 +7,27 @@ let productStar = document.getElementById('star')
 let productDots = document.getElementById('productDots')
 let allProducts = window.netonnet_product
 
+function findIndex(array, index) {
+    let foundProd = array.map(element => element.image__alt)
+    return foundProd.indexOf(index)
+}
+
 function productLoad() {
     let productID = JSON.parse(localStorage.getItem('productId'))
-    let foundProd = allProducts.find((element) => element = productID)
+    let index = findIndex(allProducts, productID)
 
-    console.log(foundProd)
+    console.log(index)
 
-    productName.innerHTML = foundProd.description__text
-    productRating.innerHTML = foundProd.rating__stars
-    productNr.innerHTML = foundProd.image__alt
-    productImage.src = foundProd.image
-    productPrice.innerHTML = foundProd.price
+    productName.innerHTML = allProducts[index].description__text
+    productRating.innerHTML = allProducts[index].rating__stars
+    productNr.innerHTML = allProducts[index].image__alt
+    productImage.src = allProducts[index].image
+    productPrice.innerHTML = allProducts[index].price
+    productDots.innerHTML = ''
+    productDots.innerHTML += allProducts[index].description__bulet.foreach(element => {
+        console.log('working')
+        productDots.innerHTML = element
+    })
 }
 
 productLoad()
