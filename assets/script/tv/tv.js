@@ -33,11 +33,7 @@ function addToCart(index) {
     }
 }
 
-function nextPage(event, index) {
-    console.log(event.target.className)
-    if(!event.target.classList.contains('text-holder1')) {
-        return
-    }
+function nextPage(index) {
     localStorage.setItem('productId', JSON.stringify(productss[index].image__alt))
     window.open('product-page.html', '_self')
 }
@@ -51,8 +47,8 @@ for(i=0;i<products.length;i++){
     <div class= "product-image">
     <img src="${products[i].image}" alt="${products[i].image__alt}"/>
     </div>
-    <div class = "text-holder1" onClick='nextPage(event, ${i})'>
-    <h4>${products[i].description__text}<h4>
+    <div class = "text-holder1" >
+    <h4 onClick='nextPage(${i})'>${products[i].description__text}<h4>
     <h3 id="${[i]}-stars"></h3>  
     <div class="discription"><ul> 
         <li class="list">${products[i].description__bulet[0]}</li>
