@@ -51,8 +51,7 @@ Sök funktion för Grupp 2. NetonNetclone
 ## :sparkles: Features ##
 
 :heavy_check_mark: JS;\
-:heavy_check_mark: HTML;\
-:heavy_check_mark: CSS;
+:heavy_check_mark: HTML/CSS;\
 
 ## :rocket: Technologies ##
 
