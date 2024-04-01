@@ -600,3 +600,566 @@ input {
     cursor: pointer;
     margin-top: 5px;
 }
+
+.huvud-container-inner {
+    display: flex;
+    width: 608px;
+    height: 1170.97px;
+    margin-top: 10px;
+    background-color: #fff;
+    flex-direction: column;
+}
+.printer {
+    display: flex;
+    width: 578px;
+    height: 24px;
+    padding: 10px;
+    gap: 5px;
+    padding-left:20px;
+    
+}
+.printerA .fa-solid {
+    color: #0797d6;
+}
+.printerB h4 {
+    color: #0797d6;
+    font-size: 13px;
+    font-weight: 100;
+    
+}
+.printerB a {
+    text-decoration: none;
+}
+.printerB:hover {
+    text-decoration: underline;
+}
+
+.hp-pav-paraA {
+    display: flex;
+    width: 598px;
+    height: 98px;
+}
+.paraA-inner p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.bild {
+    display: flex;
+    width: 598px;
+    height: 105.23px;
+    margin-top: 60px;
+}
+.backsidebild img {
+    width: 578px;
+    height: 85px;
+
+}
+
+.hp-pav-paraB {
+    display: flex;
+    width: 598px;
+    height: 147.89px;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 5px;
+
+   
+}
+
+.paraB-inner p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: 20px;
+    margin-top: 10px;
+    
+
+}
+
+.paraB-heading h4 {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: 20px;
+    
+}
+
+.amd-ryzen {
+    display: flex;
+    width: 598px;
+    height: 147.89px;
+    margin-top: 60px;
+    padding-left: 10px;
+
+}
+.img-ryzen{
+    display: flex;
+    width: 149.5px;
+    height: 135.28px;
+}
+.img-ryzen img {
+    width: 130px;
+    height: 115px;
+}
+
+.amd-text {
+    display: flex;
+    width: 448.5px;
+    height: 147.89px;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+.amd-heading h4 {
+    font-size: 15px;
+    font-weight: 200px;
+}
+
+.amd-textt p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.ssd {
+    display: flex;
+    width: 598px;
+    height: 128.39px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.ssd-img {
+    display: flex;
+    width: 149.5px;
+    height: 114.45px;
+}
+.ssd-img img {
+    width: 130px;
+    height: 94px;
+}
+.ssd-text {
+    display: flex;
+    width: 448.5px;
+    height: 128.39px;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.ssd-heading h4 {
+    font-size: 15px;
+    font-weight: 200px;
+}
+
+.ssd-textt p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.sim {
+    display: flex;
+    width: 598px;
+    height: 128.39px;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+.sim-img {
+    display: flex;
+    width: 149.5px;
+    height: 81.31px;
+}
+.sim-img img {
+    width:130px;
+    height: 61px;
+}
+
+.sim-text {
+    display: flex;
+    width: 448.5px;
+    height: 128.39px;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.sim-heading h4 {
+    font-size: 15px;
+    font-weight: 200px;
+}
+
+.sim-textt p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.antire {
+    display: flex;
+    width: 598px;
+    height: 108.89px;
+    flex-direction: column;
+    padding: 10px;
+    gap: 7px;
+}
+.antire h4 {
+    font-size: 15px;
+    font-weight: 200px;
+}
+.antire p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.tillbehor {
+    display: flex;
+    width: 608px;
+    height: 59px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    
+
+}
+.tillbehor:hover {
+    background-color: hsl(0, 25%, 92%);
+}
+.tillbehorone{
+    display: flex;
+    gap: 10px;
+    
+}
+.tillbehorinside{
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Open Sans" , sans-serif;
+}
+.tillbehorinsedea{
+    padding-top: 2px;
+    font-size: 14px;
+    color: #a2a2a2;
+}
+
+.recensioner {
+    display: flex;
+    width: 608px;
+    height: 59px;
+    background-color: #fff;
+    justify-content: space-between;
+    font-family: "Open Sans" , sans-serif;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    
+
+}
+.recensioner:hover{
+    background-color:  hsl(0, 25%, 92%);
+}
+.recensioner-inside {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    
+}
+.recensioner-inside-a{
+    font-size: 15px;
+}
+.recensioner-inside-b{
+    color: #ffce17;
+    font-size: 20px;
+    padding-left: 13px;
+    
+}
+.recensioner-inside-c{
+    padding-top: 2px;
+    font-size: 14px;
+    color: #a2a2a2;
+}
+.fa-solid{
+    color: #a2a2a2;
+}
+.fragor {
+    display: flex;
+    width: 608px;
+    height: 59px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.fragor:hover{
+    background-color:  hsl(0, 25%, 92%);
+}
+.teknisk {
+    display: flex;
+    width: 608px;
+    height: 59px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.teknisk:hover {
+    background-color:  hsl(0, 25%, 92%);
+}
+.productbeskriving {
+    display: flex;
+    width: 608px;
+    height: 59px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.productbeskriving:hover{
+    background-color:  hsl(0, 25%, 92%);
+}
+
+.rightside-one {
+    display: flex;
+    width: 610px;
+    height: 272.84px;
+    background-color: #fff;
+    cursor: pointer;
+    
+}
+.rightside-one-inne-first{
+    display: flex;
+    width: 598px;
+    height: 30px;
+    
+}
+.andra-som {
+    display: flex;
+    width: 578px;
+    height: 30px;
+    font-size: 15px;
+    padding: 15px;
+}
+.container-rightside {
+    display: flex;
+    width: 590px;
+    height: 641.78px;
+}
+.rightside-one-inne-two{
+display: flex;
+width: 598px;
+height: 210px;
+}
+.rightside-one-inner-two{
+display: flex;
+width: 598px;
+height: 211px;
+justify-content: space-between;
+margin-top: 20px;
+}
+.image-div {
+display: flex;
+width: 259px;
+height: 210px;
+padding-left: 20px;
+}
+.dator {
+display: flex;
+width: 259px;
+height: 38px;
+flex-direction: column;
+font-size: 13px;
+font-family: "Open Sans" , sans-serif;
+gap: 3px;
+
+}
+.dator a {
+text-decoration: none;
+color: #0797d6;
+}
+
+.detail-div {
+display: flex;
+width: 259px;
+height: 203px;
+background-color:#fff;
+flex-direction: column;
+}
+
+
+.hp-envy{
+    display: flex;
+    width: 259px;
+    height: 15px;
+    & h4{
+        font-size: 12px;
+        color: #a2a2a2;
+    }
+
+}
+.stars-inside {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    gap: 5px;
+}
+.star-div {
+    color: #a2a2a2;
+    font-size: 20px;
+}
+.star-div1{
+    color: #a2a2a2;
+    font-size: 13px;
+    padding-top: 6px;
+
+}
+.intel-inner {
+    display: flex;
+    width: 259px;
+    height: 67px;
+    padding-left: 16px;
+    padding-top: 10px;
+    
+    & li {
+        font-size: 12px;
+        color: #555;
+        margin-top: 5px;
+        
+    }
+}
+.price-div {
+display: flex;
+width: 259px;
+height: 25.7px;
+align-items: center;
+justify-content: center;
+color: #f00;
+font-size: 18px;
+font-weight: 550;
+margin-top: 8px;
+}
+
+.rightside-two {
+display: flex;
+width: 610px;
+height: 328px;
+background-color: #fff;
+margin-top: 20px;
+}
+.rightside-two-inner-one{
+display: flex;
+width: 598px;
+height: 30px;
+background-color: #fff;
+margin-left: 5px;
+align-items: center;
+font-size: 15px;
+
+}
+.three-div {
+display: flex;
+width: 598px;
+height: 266.94px;
+background-color: aqua;
+margin-top: 7px;
+margin-left: 5px;
+}
+
+.divone-threediv{
+display: flex;
+width: 199.33px;
+height: 266.94px;
+background-color:#fff;
+flex-direction: column;
+
+}
+.divtwo-threediv{
+display: flex;
+width: 199.33px;
+height: 266.94px;
+background-color: #fff;
+flex-direction: column;
+}
+.divthree-threediv{
+display: flex;
+width: 199.33px;
+height: 266.94px;
+background-color: #fff;
+flex-direction: column;
+}
+.acerpic {
+display: flex;
+width: 179.33px;
+height: 155.98px;
+margin-left: 5px;
+& img {
+
+width: 179px;
+height: 155px;
+}
+
+}
+.oled{
+display: flex;
+width: 179.33px;
+height: 44px;
+padding-top: 7px;
+flex-direction: column;
+gap: 5px;
+font-size: 13px;
+& a{
+text-decoration: none;
+color: #0797d6;
+}
+
+
+}
+.oled:hover{
+text-decoration: underline;
+}
+
+.acerswift {
+display: flex;
+width: 179.33px;
+height: 20.02px;
+font-size: 11px;
+color: #a2a2a2;
+padding-top: 5px;
+}
+
+
+.star-acer {
+display: flex;
+width: 179.33px;
+height: 20.02px;
+align-items: center;
+gap: 5px;
+padding-top: 5px;
+& .star-acerone {
+color: #ffce17;
+font-size: 23px;
+}
+
+& .star-acerone-one{
+font-size: 12px;
+padding-top: 5px;
+color: #a2a2a2;
+}
+}
+
+.price-price {
+display: flex;
+width: 179.33px;
+height: 18.56px;
+align-items: center;
+justify-content: center;
+padding-top: 15px;
+font-size: 13px;
+color: #f00;
+}
+
