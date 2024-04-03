@@ -13,45 +13,37 @@
     --textGrayMiddle: #666666;
     --textGrayLight: #a2a2a2;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--lightGray10);
     position: relative;
 }
-
 .header-container {
     width: 100%;
 }
-
 .header-top, .header-middle, .header-bottom {
     width: 100%;
 }
-
 .header-topblue, .header-middle_content, .header-bottom_content {
     max-width: 1280px;
     /*padding: 0 25px;*/
     margin: 0 auto;
 }
-
 .header-top {
     height: 30px;
     background: var(--accent__surface--dark);
 }
-
 .header-topblue {
     position: relative;
     max-width: 1280px;
     width: 100%;
     height: 100%;
 }
-
 .header-leftblue {
     position: absolute;
     left: 5px;
@@ -59,63 +51,52 @@ body {
     flex: 1 0;
     flex-direction: row wrap;
 }
-
 .left-lageroppet, .left-kundservice, .right-privat, .right-foretag {
     font-size: 15px;
     margin-top: 5px !important;
     cursor: pointer;
     
 }
-
 .left-lageroppet {
     color: var(--textGrayLight);
     border-right: solid var(--textGrayLight) 1px;
     padding-right: 5px;
 }
-
 .left-kundservice {
     color: var(--textGrayLight);
     padding-left: 5px;
 }
-
 .header-rightblue {
     position: absolute;
     right: 5px;
     display: flex;
     flex-direction: row wrap;
 }
-
 .right-privat {
     color: var(--textGrayLight);
     padding-right: 5px;
 }
-
 .right-foretag {
     color: var(--textGrayLight);
     padding-left: 5px;
 }
-
 .right-line {
     width: 1px;
     background: var(--textGrayLight);
     margin-top: 5px;
 }
-
 .right-privat:hover, .right-foretag:hover {
     font-weight: bold;
     font-size: 14px;
     text-decoration: underline;
 }
-
 .left-lageroppet:hover, .left-kundservice:hover {
     text-decoration: underline;
 }
-
 .checker {
     font-weight: bold;
     font-size: 14px;
 }
-
 .header-middle {
     height: 85px;
     width: 100%;
@@ -129,11 +110,9 @@ body {
         gap: 15px;
     }
 }
-
 .header-middle_mobile-navigation {
     display: none;
 }
-
 .header-middle_logo {
     width: 255px;
     height: 85px;
@@ -156,7 +135,6 @@ body {
         z-index: 1;
     }
 }
-
 .header-middle_search {
     min-width: 550px;
     height: 37px;
@@ -193,14 +171,12 @@ body {
         color: var(--lightGray10);
     }
 }
-
 .header-middle_btns {
     width: 130px;
     /*margin-left: 150px;*/
     display: flex;
     justify-content: end;
 }
-
 .middle-btns_general {
     width: 30px;
     height: 30px;
@@ -237,14 +213,12 @@ body {
         align-items: center;
     }
 }
-
 .header-bottom {
     height: 45px;
     background: var(--white);
     box-shadow: 0 0 1px 0px var(--textGrayLight);
     width: 100%;
 }
-
 .header-bottom_content {
     width: 100%;
     height: 100%;
@@ -252,7 +226,6 @@ body {
     justify-content: center;
 
 }
-
 .header-bottom_navigation {
     width: 100%;
     display: grid;
@@ -263,7 +236,6 @@ body {
     ;
 
 }
-
 .nav1, .nav2 {
     list-style-type: none;
     display: flex;
@@ -271,16 +243,13 @@ body {
     align-items: center;
     gap: 12px;
 }
-
 .nav1 {
     grid-area: nav1;
     position: relative;
 }
-
 .nav2 {
     grid-area: nav2;
 }
-
 .navigation_option {
     font-weight: 600;
     font-size: calc(100% - 2px);
@@ -288,15 +257,11 @@ body {
     transition: 0.2s;
     user-select: none;
 }
-
 .navigation_option:hover {
-    /* text-decoration: underline; */
     cursor: pointer;
     color: #0797d6;
     transition: 0.2s;
-    /* border-bottom: solid #0797d6 1px; */
 }
-
 .navigationSelect {
     color: #0797d6;
     border-bottom: solid #0797d6 2px;
@@ -308,16 +273,13 @@ body {
     .header-top, .header-bottom {
         display: none;
     }
-
     .header-middle {
         height: auto;
     }
-
     .header-middle_content {
         flex-wrap: wrap;
         gap: 5px !important;
     }
-
     .header-middle_mobile-navigation {
         display: block;
         width: 35px;
@@ -341,7 +303,6 @@ body {
             background: var(--white);
         }
     }
-
     .header-middle_logo {
         max-width: 155px;
         height: 65px;        
@@ -356,14 +317,12 @@ body {
             height: 65px;
         }
     }
-
     .header-middle_btns {
         order: 2;
         margin-left: 0;
         justify-content: center;
         width: fit-content;
     }
-
     .header-middle_search {
         min-width: 97%;
         height: 32px;
@@ -381,4 +340,3 @@ body {
         box-shadow: 0 0 4px var(--blackOnyx1);
     }
 }
-

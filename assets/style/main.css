@@ -69,6 +69,8 @@ main {
         font-size: 2rem;
         font-family: "Gorditas", serif;
         font-weight: 700;
+        user-select: none;
+        cursor: pointer;
     }
 }
 .puff{
@@ -78,8 +80,6 @@ main {
     max-width: 1200px;
     width: 100vw;
     margin: 0 auto;
-    background:var(--lightGray30);
-
 }
 /*.puff--inner{
     display: flex;
