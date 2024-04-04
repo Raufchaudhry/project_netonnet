@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassa Page</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="main_div">
+    <div class="main_container">
+        <div class="main_container_inner">
+            <div class="main_container_inner_logo">
+                <a href="https://www.netonnet.se/"><img id="logo" src="logo_netonnet.png" alt="logo"></a>
+            </div>
+            <div class="main_container_inner_paymentoptions">
+                <img id="resurs" src="Resurs.png" alt="Resurs">
+                <img id="swish"  src="Swish.png" alt="swish">
+                <img id="visa" src="Visa.png" alt="visa">
+                <img id="master" src="Mastercard.png" alt="master">
+                <img id="amex" src="AMEX.png" alt="amex">
+            </div>
+        </div>
+    </div>
+    <div class="undermain_container">
+        <div class="choose">
+            
+            <div class="container">
+                <h5>Jag handlar som:</h5>
+            
+                <input type="radio" id="privat" name="customerType" value="privat">
+                <label id="label_privat" for="privat">Privatperson</label>
+        
+                
+                <input type="radio" id="företag" name="customerType" value="företag">
+                <label id="label_foretag" for="företag">Företag</label>
+            </div>
+        </div>
+        <div class="under_choose">
+            <div class="kundvagen">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="kundvagen">Kundvagen</span>
+                
+            </div>
+            <div class="kundvagen_one">Kundvagnen är tom</div>
+            <div class="totalpris"><span id="pris">Totalpris:</span><span id="nummer">0:-</span></div>
+            <div class="komplettera"><h2>Komplettera ditt köp</h2></div>
+        </div>
+    </div>
+    <div class="line-divider"></div>
+    <div class="main">
+   
+
+        <div id="main-container" class="main-container">
+          
+          
+        </div>
+        <div class="main-container-arrow">
+          <div class="arrow left" onclick="scrollContainer('left')"><img src="images.jpg" alt="img"></div>
+          <div class="arrow right" onclick="scrollContainer('right')"><img src="images.jpg" alt="img"></div>
+        
+        </div>
+    </div>
+
+    
+    <div class="white">
+      <div class="box"></div>
+   </div>
+
+
+    <div class="main_paypart">
+      <div class="andra">
+    <div id="paytype" class="fourdivone">
+        <img src="bilpic.png" alt="bil"><span>Fraktsätt</span>
+      </div>
+      <div>
+        <a id="andraa" href="#">Ändra</a>
+      </div>
+      
+      </div>
+      <div id="paytype1" class="fourdivone">
+        <i class="fa-regular fa-credit-card"></i><span id="betal">Betalsätt</span>
+      </div>
+    
+      <div id="paytype2" class="fourdivone">
+        <i class="fa-solid fa-user"></i><span>Kunduppgifter</span>
+      </div>
+    
+      <div id="paytype3" class="fourdivone">
+        <img src="threedot.png" alt="dot"><span>Orderöversikt</span>
+      </div>
+    </div>
+      
+      <div class="chaticon"><img src="chatimage.png" alt="chat"></div>
+      
+        
+        </div>
+    
+        <script src="js/test.js"></script>
+</body>
+</html>
