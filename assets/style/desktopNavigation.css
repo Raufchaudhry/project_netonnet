@@ -59,6 +59,7 @@ main {height: 70vh;
     height: calc(70vh + auto);
     background:#fff;
     margin-top: 15px;
+    box-shadow: 0 0 1px 0px var(--textGrayLight);
 }
 
 a.nav-item__links:link  {
