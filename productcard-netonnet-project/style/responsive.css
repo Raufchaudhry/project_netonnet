@@ -1,0 +1,64 @@
+
+
+@media screen and (max-width:900px) {
+   .containertwo {
+            flex: auto;
+            width: 100%;
+            
+        }
+}
+
+@media screen and (max-width:750px) {
+
+    .partone {
+        flex: auto;
+        width: 100%;
+        
+        
+    }
+
+    .parttwo {
+        flex: auto;
+        width: 100%;
+        margin-right: 500px;
+        
+        
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .parttwo {
+        order: 1;
+    }
+
+    .partone {
+        order: 2;
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .insideone {
+        flex-direction: column;
+        
+    }
+    .insideone h2 {
+        font-size: 20px;
+        
+        
+    }
+}
+
+@media screen and (max-width:630px) {
+    .huvud-container-inner{
+        display: flex;
+        max-width: 450px;
+        flex-flow: row wrap;
+    }
+    .backsidebild img{
+        max-width: 450px;
+    }
+}
+
