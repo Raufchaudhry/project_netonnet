@@ -27,7 +27,7 @@
 
 .cart-menu {
     width: 60vw;
-    height: 80vh;
+    height: 75vh;
     background: #f3f3f3;
     padding: 15px;
     display: flex;
@@ -60,6 +60,7 @@
     border-color: #b9b9b9;
     overflow-y: scroll;
 }
+
 
 .prod {
     width: 100%;
@@ -140,7 +141,24 @@
 }
 
 .cart-recommendations {
-    height: 25%;
+    height: 16%;
+    padding: 10px 20px;
+}
+
+.toKassa {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    background: #015582;
+    color: #e5e5e5;
+    font-size: 1.5rem;
+    border: none;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &:active {
+        box-shadow: none;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
