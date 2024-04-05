@@ -1313,40 +1313,6 @@
             });
             });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const infoLink = document.querySelector('.infoside');
-            const tryghetLink = document.querySelector('.tryghet');
-            const popup = document.querySelector('.popups');
-            const bodyOverlay = document.querySelector('.body-overlay');
-
-            infoLink.addEventListener('click', togglePopup);
-            tryghetLink.addEventListener('click', togglePopup);
-            document.getElementById('cross').addEventListener('click', togglePopup);
-            bodyOverlay.addEventListener('click', closePopupOutside);
-
-            function togglePopup() {
-                popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
-                bodyOverlay.style.display = bodyOverlay.style.display === 'none' ? 'block' : 'none';
-                document.body.classList.toggle('popup-open');
-
-                if (popup.style.display === 'block') {
-                    document.body.style.overflow = 'hidden'; // Disable scrolling
-                } else {
-                    document.body.style.overflow = ''; // Enable scrolling
-                }
-            }
-
-            function closePopupOutside(event) {
-                if (event.target === bodyOverlay) {
-                    popup.style.display = 'none';
-                    bodyOverlay.style.display = 'none';
-                    document.body.classList.remove('popup-open');
-                    document.body.style.overflow = ''; // Enable scrolling
-                }
-            }
-            });
-    </script>
     <script src="assets/script/header/header-mobile_nav.js"></script> 
     <script src="assets/script/header/header-CartPopup.js"></script> 
     <script src="assets/script/header/header-desktop_nav.js"></script>
